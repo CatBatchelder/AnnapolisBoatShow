@@ -317,6 +317,14 @@ template {
 /* =============
     Base
 ============= */
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+ul li {
+  list-style: none; }
+
 /* =============
     Typography
 ============= */
@@ -346,4 +354,90 @@ textarea {
 ============= */
 /* =============
     Footer
+============= */
+/* =============
+    Section-1
+============= */
+#section-1 {
+  background-image: url("../img/section-1/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 176px; }
+  @media (min-width: 768px) {
+    #section-1 {
+      height: 425px; } }
+  @media (min-width: 992px) {
+    #section-1 {
+      height: 564px; } }
+/* =============
+    Section-2
+============= */
+#section-2 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-2 ."; }
+  #section-2 #section-2-container {
+    grid-area: section-2; }
+    #section-2 #section-2-container #section-2-when {
+      text-align: center;
+      margin: 20px; }
+    #section-2 #section-2-container #section-2-price {
+      text-align: center; }
+    #section-2 #section-2-container > div {
+      width: 140px;
+      border-bottom: 2px solid black;
+      border-radius: 25%;
+      margin: 0 100px; }
+    #section-2 #section-2-container aside {
+      background-image: url("../img/section-2/boat.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+
+/* =============
+    Section-3
+============= */
+#section-3 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-3 ."; }
+  #section-3 #section-3-content {
+    grid-area: section-3; }
+    #section-3 #section-3-content h1 {
+      text-align: center; }
+    #section-3 #section-3-content p {
+      text-align: center; }
+    #section-3 #section-3-content aside img {
+      width: 100%; }
+    #section-3 #section-3-content h2 {
+      text-align: center; }
+    #section-3 #section-3-content #section-3-callout div {
+      width: 180px;
+      border-bottom: 2px solid black;
+      border-radius: 25%;
+      text-align: center;
+      margin: auto; }
+
+/* =============
+    Section-4
+============= */
+#section-4 {
+  display: grid;
+  grid-template-columns: 15px auto 15px;
+  grid-template-areas: ". section-4 ."; }
+  #section-4 #section-4-content {
+    grid-area: section-4; }
+    #section-4 #section-4-content h1 {
+      text-align: center; }
+    #section-4 #section-4-content ul li #g1 {
+      background-image: url("../img/section-4/1.png");
+      background-size: cover;
+      background-position: center;
+      height: 60px; }
+
+/* =============
+    Section-5
+============= */
+/* =============
+    Section-6
 ============= */

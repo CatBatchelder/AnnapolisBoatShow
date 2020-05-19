@@ -1,3 +1,35 @@
 /* =============
     Section-2
 ============= */
+
+#section-2 {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-2 .";
+
+    #section-2-container {
+        grid-area: section-2;
+
+        #section-2-when {
+            text-align: center;
+            margin: 20px;
+        }
+
+        #section-2-price {
+            text-align: center;
+        }
+        >div{
+            width: 140px;
+            border-bottom: 2px solid black;
+            border-radius: 25%;
+            margin: 0 100px;
+        }
+
+        aside{
+            background-image: url('../img/section-2/boat.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

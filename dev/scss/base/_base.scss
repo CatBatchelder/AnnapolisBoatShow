@@ -2,4 +2,20 @@
     Base
 ============= */
 
+.show-for-md{
+    display: none;
+    @include md{
+        display: block;
+    }
+}
+
+ul{
+
+    li{
+        list-style: none;
+    }
+}
+
+
+
 
