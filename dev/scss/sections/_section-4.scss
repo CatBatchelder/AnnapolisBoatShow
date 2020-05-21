@@ -14,15 +14,38 @@
             text-align: center;
         }
 
-        ul{
-            li{
-                #g1{
-                    background-image: url("../img/section-4/1.png");
-                    background-size: cover;
-                    background-position: center;
-                    height: 60px;
-                }
+        #g1{
+            background-image: url("../img/section-4/1.png");
+            background-size: cover;
+            height: 59px;
+            width: 256px;
+            margin: auto;
+
+            @include md{
+                height: 154px;
+                width: 668px;
+            }
+
+            @include lg{
+                height: 192px;
+                width: 831px;
             }
         }
+
+        #section-4-link{
+            display: flex;
+            justify-content: center;
+
+            h2{
+                text-align: center;
+                background-color: red;
+                color: white;
+                padding: 7px 14px;
+                text-decoration: none;
+                border-radius: 25px;
+                width: 180px;
+            }
+
     }
+}
 }

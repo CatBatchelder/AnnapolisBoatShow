@@ -1,3 +1,112 @@
 /* =============
     Section-6
 ============= */
+
+#section-6 {
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-6 .";
+
+    #section-6-content {
+        grid-area: section-6;
+
+        h1 {
+            text-align: center;
+        }
+
+        #section-6-p {
+            text-align: center;
+        }
+
+        aside {
+            img {
+                width: 100%;
+            }
+        }
+
+        ul {
+            li {
+                div {
+                    width: 239px;
+                    border-bottom: 3px solid black;
+                    border-radius: 25%;
+                    margin: auto;
+                }
+
+                hr {
+                    border: 1px solid black;
+                    border-radius: 25%;
+                    width: 159px;
+                    margin: auto;
+                }
+
+                h3 {
+                    text-align: center;
+                }
+
+                h5 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: left;
+                }
+
+                aside {
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "g1 g2";
+                    gap: 30px;
+                }
+
+                .g1 {
+                    img {
+                        height: 134px;
+                        width: 134px;
+                    }
+
+                    grid-area: g1;
+                }
+
+                .g2 {
+                    grid-area: g2;
+
+                    img {
+                        height: 134px;
+                        width: 134px;
+                    }
+                }
+
+
+            }
+        }
+
+        // #section-6-f {
+        //     aside {
+        //         display: grid;
+        //         grid-template-columns: 50% auto;
+        //         grid-template-areas: "g1 g2";
+        //         gap: 30px;
+        //     }
+
+        //     #g1 {
+        //         img {
+        //             height: 134px;
+        //             width: 134px;
+        //         }
+
+        //         grid-area: g1;
+        //     }
+
+        //     #g2 {
+        //         grid-area: g2;
+
+        //         img {
+        //             height: 134px;
+        //             width: 134px;
+        //         }
+        //     }
+        // }
+
+    }
+}
