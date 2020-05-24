@@ -2,41 +2,87 @@
     Section-3
 ============= */
 
-#section-3{
+#section-3 {
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-3 .";
 
-    #section-3-content{
+    #section-3-content {
         grid-area: section-3;
 
-        h1{
+        h1 {
             text-align: center;
         }
 
-        p{
-            text-align: center;
-        }
+        #section-3-callout {
+            margin-top: 30px;
 
-        aside{
-            img{
-                width: 100%;
+            h2 {
+                text-align: center;
             }
-        }
 
-
-        h2{
-            text-align: center;
-        }
-
-        #section-3-callout{
-            div{
+            div {
                 width: 180px;
                 border-bottom: 2px solid black;
                 border-radius: 25%;
                 text-align: center;
                 margin: auto;
+
+                @include md{
+                    width: 556px;
+                }
+
+                @include lg{
+                    width: 620px;
+                }
             }
+
+            @include md {
+                grid-area: quote;
+            }
+        }
+
+
+        p {
+            text-align: center;
+
+            @include md {
+                grid-area: p;
+            }
+
+            @include lg{
+                border-right: solid 1px blue;
+            }
+        }
+
+        aside {
+            background-image: url('../img/section-3/sailboat.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 299px;
+            width: 259px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include md {
+                grid-area: boat;
+                height: 310px;
+                width: 268px;
+                margin: 0;
+            }
+        }
+
+        #section-3-md {
+            @include md {
+                display: grid;
+                grid-template-columns: 60% auto;
+                grid-template-areas:
+                    "p boat"
+                    "quote quote";
+                
+            }
+
         }
     }
 

@@ -16,12 +16,31 @@
 
         p{
             text-align: center;
+
+            @include md{
+                grid-area: p;
+                text-align: left;
+            }
         }
 
         aside{
             img{
                 width: 100%;
             }
+
+            @include md{
+                grid-area: boat;
+            }
+        }
+    }
+    #section-5-md{
+        @include md{
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas: 
+            "p boat";
+            gap: 105px;
+            margin-top: 50px;
         }
     }
 }

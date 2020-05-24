@@ -16,97 +16,478 @@
 
         #section-6-p {
             text-align: center;
+
+            @include md {
+                text-align: left;
+                grid-area: p;
+            }
         }
 
         aside {
             img {
+                margin-top: 20px;
                 width: 100%;
+            }
+
+            @include md {
+                grid-area: wine;
+                 img{
+                    //  height: 301px;
+                    //  width: 461px;
+                 }
+            }
+        }
+
+        #section-6-beg {
+            @include md {
+                display: grid;
+                grid-template-columns: 40% auto;
+                grid-template-areas:
+                    "p wine";
             }
         }
 
         ul {
             li {
-                div {
-                    width: 239px;
-                    border-bottom: 3px solid black;
-                    border-radius: 25%;
-                    margin: auto;
-                }
+                // #hr {
+                //     width: 239px;
+                //     border-bottom: 3px solid black;
+                //     border-radius: 25%;
+                //     margin: auto;
+                //     margin-top: -20px;
 
-                hr {
-                    border: 1px solid black;
-                    border-radius: 25%;
-                    width: 159px;
-                    margin: auto;
-                }
+                //     @include md {
+                //         width: 553px;
+                //     }
+                // }
 
-                h3 {
-                    text-align: center;
-                }
+                // hr {
+                //     border: 1px solid black;
+                //     border-radius: 25%;
+                //     width: 159px;
+                //     margin: auto;
+                //     margin-top: -20px;
 
-                h5 {
-                    text-align: center;
-                }
+                //     @include md {
+                //         width: 196px;
+                //     }
+                // }
 
-                p {
-                    text-align: left;
-                }
+                // h3 {
+                //     text-align: center;
+                // }
 
-                aside {
-                    display: grid;
-                    grid-template-columns: 50% auto;
-                    grid-template-areas: "g1 g2";
-                    gap: 30px;
-                }
+                // h5 {
+                //     text-align: center;
+                // }
 
-                .g1 {
-                    img {
-                        height: 134px;
-                        width: 134px;
-                    }
+                // p {
+                //     text-align: left;
+                // }
 
-                    grid-area: g1;
-                }
+                // aside {
+                //     display: grid;
+                //     grid-template-columns: 50% auto;
+                //     grid-template-areas: "g1 g2";
+                //     gap: 30px;
 
-                .g2 {
-                    grid-area: g2;
+                //     // @include md{
+                //     //     grid-template-columns: 1;
+                //     //     grid-template-rows: 50% auto;
+                //     //     grid-template-areas: "g1" "g2";
+                //     //     align-items: center;
+                //     // }
+                // }
 
-                    img {
-                        height: 134px;
-                        width: 134px;
-                    }
-                }
+                // .g1 {
+                //     img {
+                //         height: 134px;
+                //         width: 134px;
+                //         display: block;
+                //         margin-left: auto;
+                //         margin-right: auto;
+
+                //         @include md {
+                //             height: 174px;
+                //             width: 174px;
+                //         }
+
+                //         @include lg {
+                //             height: 212px;
+                //             width: 212px;
+                //         }
+                //     }
+
+                //     grid-area: g1;
+
+                // }
+
+                // .g2 {
+                //     grid-area: g2;
+
+                //     img {
+                //         height: 134px;
+                //         width: 134px;
+                //         display: block;
+                //         margin-left: auto;
+                //         margin-right: auto;
+
+                //         @include md {
+                //             height: 174px;
+                //             width: 174px;
+                //         }
+
+                //         @include lg {
+                //             height: 212px;
+                //             width: 212px;
+                //         }
+                //     }
+                // }
 
 
             }
         }
 
-        // #section-6-f {
-        //     aside {
-        //         display: grid;
-        //         grid-template-columns: 50% auto;
-        //         grid-template-areas: "g1 g2";
-        //         gap: 30px;
-        //     }
+        #section-6-f{
+            #section-6-fbig{
+                @include md{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "fdrink fmusic";
+                }
+            }
 
-        //     #g1 {
-        //         img {
-        //             height: 134px;
-        //             width: 134px;
-        //         }
+            #section-6-fdrink{
+                grid-area: fdrink;
+            }
 
-        //         grid-area: g1;
-        //     }
+            #section-6-fmusic{
+                grid-area: fmusic;
+            }
 
-        //     #g2 {
-        //         grid-area: g2;
+            #hr {
+                width: 239px;
+                border-bottom: 3px solid black;
+                border-radius: 25%;
+                margin: auto;
+                margin-top: -20px;
 
-        //         img {
-        //             height: 134px;
-        //             width: 134px;
-        //         }
-        //     }
-        // }
+                @include md {
+                    width: 553px;
+                }
+            }
 
+            hr {
+                border: 1px solid black;
+                border-radius: 25%;
+                width: 159px;
+                margin: auto;
+                margin-top: -20px;
+
+                @include md {
+                    width: 196px;
+                }
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            aside {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "g1 g2";
+                gap: 30px;
+
+                @include md{
+                    grid-template-columns: 100%;
+                    grid-template-rows: 50% auto;
+                    grid-template-areas: "g1" "g2";
+                    align-items: center;
+                }
+            }
+
+            #g1 {
+                img {
+                    height: 134px;
+                    width: 134px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    @include md {
+                        height: 174px;
+                        width: 174px;
+                    }
+
+                    @include lg {
+                        height: 212px;
+                        width: 212px;
+                    }
+                }
+
+                grid-area: g1;
+
+            }
+
+            #g2 {
+                grid-area: g2;
+
+                img {
+                    height: 134px;
+                    width: 134px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    @include md {
+                        height: 174px;
+                        width: 174px;
+                    }
+
+                    @include lg {
+                        height: 212px;
+                        width: 212px;
+                    }
+                }
+            }
+        }
+
+        #section-6-s{
+
+            #section-6-sbig{
+                @include md{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "sdrink smusic";
+                }
+            }
+
+            #section-6-sdrink{
+                grid-area: sdrink;
+            }
+
+            #section-6-smusic{
+                grid-area: smusic;
+            }
+
+            #hr2 {
+                width: 239px;
+                border-bottom: 3px solid black;
+                border-radius: 25%;
+                margin: auto;
+                margin-top: -20px;
+
+                @include md {
+                    width: 553px;
+                }
+            }
+
+            hr {
+                border: 1px solid black;
+                border-radius: 25%;
+                width: 159px;
+                margin: auto;
+                margin-top: -20px;
+
+                @include md {
+                    width: 196px;
+                }
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            aside {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "g3 g4";
+                gap: 30px;
+                grid-area: smusic;
+
+                @include md{
+                    grid-template-columns: 100%;
+                    grid-template-rows: 50% auto;
+                    grid-template-areas: "g3" "g4";
+                    align-items: center;
+                }
+            }
+
+            #g3 {
+                img {
+                    height: 134px;
+                    width: 134px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    @include md {
+                        height: 174px;
+                        width: 174px;
+                    }
+
+                    @include lg {
+                        height: 212px;
+                        width: 212px;
+                    }
+                }
+
+                grid-area: g3;
+
+            }
+
+            #g4 {
+                grid-area: g4;
+
+                img {
+                    height: 134px;
+                    width: 134px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    @include md {
+                        height: 174px;
+                        width: 174px;
+                    }
+
+                    @include lg {
+                        height: 212px;
+                        width: 212px;
+                    }
+                }
+            }
+        }
+
+        #section-6-su{
+
+            #section-6-subig{
+                @include md{
+                    display: grid;
+                    grid-template-columns: 50% auto;
+                    grid-template-areas: "sudrink sumusic";
+                }
+            }
+
+            #section-6-sudrink{
+                grid-area: sudrink;
+            }
+
+            #section-6-sumusic{
+                grid-area: sumusic;
+            }
+
+            #hr3 {
+                width: 239px;
+                border-bottom: 3px solid black;
+                border-radius: 25%;
+                margin: auto;
+                margin-top: -20px;
+
+                @include md {
+                    width: 553px;
+                }
+            }
+
+            hr {
+                border: 1px solid black;
+                border-radius: 25%;
+                width: 159px;
+                margin: auto;
+                margin-top: -20px;
+
+                @include md {
+                    width: 196px;
+                }
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            h5 {
+                text-align: center;
+            }
+
+            p {
+                text-align: left;
+            }
+
+            aside {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "g5 g6";
+                gap: 30px;
+
+                @include md{
+                    grid-template-columns: 100%;
+                    grid-template-rows: 50% auto;
+                    grid-template-areas: "g5" "g6";
+                    align-items: center;
+                }
+            }
+
+            #g5 {
+                img {
+                    height: 134px;
+                    width: 134px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    @include md {
+                        height: 174px;
+                        width: 174px;
+                    }
+
+                    @include lg {
+                        height: 212px;
+                        width: 212px;
+                    }
+                }
+
+                grid-area: g5;
+
+            }
+
+            #g6 {
+                grid-area: g6;
+
+                img {
+                    height: 134px;
+                    width: 134px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+
+                    @include md {
+                        height: 174px;
+                        width: 174px;
+                    }
+
+                    @include lg {
+                        height: 212px;
+                        width: 212px;
+                    }
+                }
+            }
+        }
     }
 }

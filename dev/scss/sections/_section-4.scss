@@ -14,12 +14,25 @@
             text-align: center;
         }
 
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 50px;
+            li{
+                img{
+                    height: 30px;
+                }
+            }
+        }
+
         #g1{
             background-image: url("../img/section-4/1.png");
             background-size: cover;
             height: 59px;
             width: 256px;
             margin: auto;
+            margin-top: 34px;
 
             @include md{
                 height: 154px;

@@ -10,26 +10,73 @@
     #section-2-container {
         grid-area: section-2;
 
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-areas:
+                "when price"
+                "tickets tickets";
+            gap: 50px;
+        }
+
+
         #section-2-when {
             text-align: center;
             margin: 20px;
+
+            @include md {
+                grid-area: when;
+                margin: 0;
+                border-left: 1px blue solid;
+                border-right: 1px blue solid;
+            }
         }
 
         #section-2-price {
             text-align: center;
+            @include md{
+                border-left: 1px blue solid;
+                border-right: 1px blue solid;
+                grid-area: price;
+            }
+            
         }
-        >div{
+
+        #section-2-link {
+            display: flex;
+            justify-content: center;
+            grid-area: tickets;
+
+            h2 {
+                text-align: center;
+                background-color: red;
+                color: white;
+                padding: 7px 14px;
+                text-decoration: none;
+                border-radius: 25px;
+                width: 121px;
+            }
+
+        }
+
+        #hr {
             width: 140px;
             border-bottom: 2px solid black;
             border-radius: 25%;
-            margin: 0 100px;
+            margin: auto;
+
+            @include md{
+                width: 0;
+            }
         }
 
-        aside{
+        aside {
             background-image: url('../img/section-2/boat.png');
             background-position: center;
-            background-repeat: no-repeat;
             background-size: cover;
+            height: 116px;
+            width: 75px;
         }
+
     }
 }
