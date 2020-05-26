@@ -28,22 +28,75 @@
             text-align: center;
             margin: 20px;
 
+            h1{
+                font-size: rem-calc(31);
+                color: $light-blue;
+
+                @include md{
+                    font-size: rem-calc(42);
+                }
+            }
+
+            h3{
+                font-size: rem-calc(18);
+                color: $dark-blue;
+                font-weight: 400;
+                
+                @include md{
+                    font-size: rem-calc(22);
+                    
+                    span{ 
+                        font-weight: 700;
+                    }
+                }
+
+                @include lg{
+                    font-size: rem-calc(28);
+                }
+            }
+
             @include md {
                 grid-area: when;
                 margin: 0;
-                border-left: 1px blue solid;
-                border-right: 1px blue solid;
+                border-left: 2px $pastel-blue solid;
+                border-right: 2px $pastel-blue solid;
             }
         }
 
         #section-2-price {
             text-align: center;
             @include md{
-                // border-left: 1px blue solid;
-                border-right: 1px blue solid;
+                border-right: 2px $pastel-blue solid;
                 grid-area: price;
                 margin-left: -40px;
             }
+
+            h1{
+                font-size: rem-calc(31);
+                color: $light-blue;
+
+                @include md{
+                    font-size: rem-calc(42);
+                }
+            }
+
+            h3{
+                font-size: rem-calc(18);
+                color: $dark-blue;
+                font-weight: 400;
+                span{ 
+                    font-weight: 700;
+                }
+                
+                @include md{
+                    font-size: rem-calc(22);
+                }
+
+                @include lg{
+                    font-size: rem-calc(28);
+                }
+            }
+
             
         }
 
@@ -64,7 +117,7 @@
 
             h2 {
                 text-align: center;
-                background-color: red;
+                background-color: $red;
                 color: white;
                 padding: 10px 20px;
                 border-radius: 25px;
@@ -75,7 +128,7 @@
 
         #hr2 {
             width: 140px;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid $pastel-blue;
             border-radius: 25%;
             margin: auto;
 
@@ -83,14 +136,6 @@
                 width: 0;
             }
         }
-
-        // aside {
-        //     background-image: url('../img/section-2/boat.png');
-        //     background-position: center;
-        //     background-size: cover;
-        //     height: 116px;
-        //     width: 75px;
-        // }
 
     }
 }

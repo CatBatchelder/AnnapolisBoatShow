@@ -330,7 +330,7 @@ ul {
 .dot {
   height: 10px;
   width: 10px;
-  background-color: red;
+  background-color: #B46A68;
   border-radius: 50%;
   margin: 8.5px; }
 
@@ -351,7 +351,7 @@ ul {
 .dot-open {
   height: 4px;
   width: 4px;
-  border: 3px red solid;
+  border: 3px #B46A68 solid;
   border-radius: 50%;
   margin: 8.5px; }
 
@@ -450,19 +450,55 @@ footer {
     #section-2 #section-2-container #section-2-when {
       text-align: center;
       margin: 20px; }
+      #section-2 #section-2-container #section-2-when h1 {
+        font-size: 1.9375rem;
+        color: #03588C; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-container #section-2-when h1 {
+            font-size: 2.625rem; } }
+      #section-2 #section-2-container #section-2-when h3 {
+        font-size: 1.125rem;
+        color: #023059;
+        font-weight: 400; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-container #section-2-when h3 {
+            font-size: 1.375rem; }
+            #section-2 #section-2-container #section-2-when h3 span {
+              font-weight: 700; } }
+        @media (min-width: 992px) {
+          #section-2 #section-2-container #section-2-when h3 {
+            font-size: 1.75rem; } }
       @media (min-width: 768px) {
         #section-2 #section-2-container #section-2-when {
           grid-area: when;
           margin: 0;
-          border-left: 1px blue solid;
-          border-right: 1px blue solid; } }
+          border-left: 2px #73A2BF solid;
+          border-right: 2px #73A2BF solid; } }
     #section-2 #section-2-container #section-2-price {
       text-align: center; }
       @media (min-width: 768px) {
         #section-2 #section-2-container #section-2-price {
-          border-right: 1px blue solid;
+          border-right: 2px #73A2BF solid;
           grid-area: price;
           margin-left: -40px; } }
+      #section-2 #section-2-container #section-2-price h1 {
+        font-size: 1.9375rem;
+        color: #03588C; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-container #section-2-price h1 {
+            font-size: 2.625rem; } }
+      #section-2 #section-2-container #section-2-price h3 {
+        font-size: 1.125rem;
+        color: #023059;
+        font-weight: 400; }
+        #section-2 #section-2-container #section-2-price h3 span {
+          font-weight: 700; }
+        @media (min-width: 768px) {
+          #section-2 #section-2-container #section-2-price h3 {
+            font-size: 1.375rem; } }
+        @media (min-width: 992px) {
+          #section-2 #section-2-container #section-2-price h3 {
+            font-size: 1.75rem; } }
     #section-2 #section-2-container #section-2-link {
       display: flex;
       justify-content: center;
@@ -476,14 +512,14 @@ footer {
         color: blue; }
       #section-2 #section-2-container #section-2-link h2 {
         text-align: center;
-        background-color: red;
+        background-color: #B46A68;
         color: white;
         padding: 10px 20px;
         border-radius: 25px;
         width: 121px; }
     #section-2 #section-2-container #hr2 {
       width: 140px;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid #73A2BF;
       border-radius: 25%;
       margin: auto; }
       @media (min-width: 768px) {
@@ -499,21 +535,40 @@ footer {
   #section-3 #section-3-content {
     grid-area: section-3; }
     #section-3 #section-3-content h1 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.9375rem;
+      color: #03588C; }
+      @media (min-width: 768px) {
+        #section-3 #section-3-content h1 {
+          font-size: 2.625rem; } }
     #section-3 #section-3-content #section-3-callout {
       margin-top: 30px; }
       #section-3 #section-3-content #section-3-callout h2 {
-        text-align: center; }
+        text-align: center;
+        font-family: 'Libre Caslon Text', serif;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: #023059; }
+        @media (min-width: 768px) {
+          #section-3 #section-3-content #section-3-callout h2 {
+            font-size: 2.25rem;
+            line-height: 3.25rem; } }
+        @media (min-width: 768px) {
+          #section-3 #section-3-content #section-3-callout h2 {
+            font-size: 3rem;
+            line-height: 3.25rem; } }
       #section-3 #section-3-content #section-3-callout div {
         width: 180px;
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid #B46A68;
         border-radius: 25%;
         text-align: center;
         margin: auto; }
         @media (min-width: 768px) {
           #section-3 #section-3-content #section-3-callout div {
             width: 556px;
-            margin-top: 35px; } }
+            margin-top: 35px;
+            border-bottom: 3px solid #B46A68; } }
         @media (min-width: 992px) {
           #section-3 #section-3-content #section-3-callout div {
             width: 620px; } }
@@ -521,16 +576,22 @@ footer {
         #section-3 #section-3-content #section-3-callout {
           grid-area: quote; } }
     #section-3 #section-3-content p {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: #023059; }
       @media (min-width: 768px) {
         #section-3 #section-3-content p {
           grid-area: p;
           margin-right: 35px;
-          margin-top: 80px; } }
+          font-size: 1.375rem;
+          line-height: 1.875rem; } }
       @media (min-width: 992px) {
         #section-3 #section-3-content p {
-          border-right: solid 1px blue;
-          padding-right: 35px; } }
+          border-right: solid 1px #73A2BF;
+          padding-right: 50px;
+          font-size: 1.5625rem;
+          line-height: 2.125rem; } }
     #section-3 #section-3-content aside {
       background-image: url("../img/section-3/sailboat.jpg");
       background-position: center;
@@ -545,7 +606,7 @@ footer {
           grid-area: boat;
           height: 310px;
           width: 268px;
-          margin: 0; } }
+          margin-top: 30px; } }
     @media (min-width: 768px) {
       #section-3 #section-3-content #section-3-md {
         display: grid;
@@ -561,7 +622,12 @@ footer {
   #section-4 #section-4-content {
     grid-area: section-4; }
     #section-4 #section-4-content h1 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.9375rem;
+      color: #03588C; }
+      @media (min-width: 768px) {
+        #section-4 #section-4-content h1 {
+          font-size: 2.625rem; } }
     #section-4 #section-4-content ul {
       display: flex;
       justify-content: space-evenly;
@@ -593,15 +659,17 @@ footer {
         font-size: 1.3125rem;
         text-decoration: none; }
       #section-4 #section-4-content #section-4-link a:hover, #section-4 #section-4-content #section-4-link a:active {
-        color: blue; }
+        color: #73A2BF; }
       #section-4 #section-4-content #section-4-link h2 {
         text-align: center;
-        background-color: red;
+        background-color: #B46A68;
         color: white;
         padding: 7px 14px;
         text-decoration: none;
         border-radius: 25px;
-        width: 180px; }
+        width: 180px;
+        font-size: 1.3125rem;
+        font-weight: 400; }
 
 /* =============
     Section-5
@@ -613,19 +681,38 @@ footer {
   #section-5 #section-5-content {
     grid-area: section-5; }
     #section-5 #section-5-content h1 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.9375rem;
+      color: #03588C; }
+      @media (min-width: 768px) {
+        #section-5 #section-5-content h1 {
+          font-size: 2.625rem; } }
     #section-5 #section-5-content p {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: #023059; }
       @media (min-width: 768px) {
         #section-5 #section-5-content p {
           grid-area: p;
           text-align: left;
-          margin-top: 80px; } }
+          margin-top: 0px;
+          font-size: 1.375rem;
+          line-height: 1.875rem;
+          padding-left: 50px; } }
+      @media (min-width: 992px) {
+        #section-5 #section-5-content p {
+          border-right: solid 1px #73A2BF;
+          padding-right: 50px;
+          margin-top: 80px;
+          font-size: 1.6875rem;
+          line-height: 2.3125rem; } }
     #section-5 #section-5-content aside img {
       width: 100%; }
     @media (min-width: 768px) {
       #section-5 #section-5-content aside {
-        grid-area: boat; } }
+        grid-area: boat;
+        padding-right: 50px; } }
   @media (min-width: 768px) {
     #section-5 #section-5-md {
       display: grid;
@@ -643,15 +730,28 @@ footer {
   #section-6 #section-6-content {
     grid-area: section-6; }
     #section-6 #section-6-content h1 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.9375rem;
+      color: #03588C; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content h1 {
+          font-size: 2.625rem; } }
     #section-6 #section-6-content #section-6-p {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: #023059; }
       @media (min-width: 768px) {
         #section-6 #section-6-content #section-6-p {
           text-align: left;
           grid-area: p;
-          margin-top: 80px;
-          margin-right: 15px; } }
+          margin-right: 15px;
+          font-size: 1.375rem;
+          line-height: 1.875rem; } }
+      @media (min-width: 992px) {
+        #section-6 #section-6-content #section-6-p {
+          font-size: 1.6875rem;
+          line-height: 2.3125rem; } }
     #section-6 #section-6-content aside img {
       margin-top: 20px;
       width: 100%; }
@@ -670,11 +770,41 @@ footer {
         grid-template-areas: "fdrink fmusic"; } }
     #section-6 #section-6-content #section-6-f #section-6-fdrink {
       grid-area: fdrink; }
+      #section-6 #section-6-content #section-6-f #section-6-fdrink h5 {
+        text-align: center;
+        font-size: 1.0625rem;
+        font-weight: 400;
+        line-height: 1.0625rem;
+        color: #023059; }
+        @media (min-width: 768px) {
+          #section-6 #section-6-content #section-6-f #section-6-fdrink h5 {
+            font-size: 1.375rem;
+            line-height: 2rem; } }
     #section-6 #section-6-content #section-6-f #section-6-fmusic {
       grid-area: fmusic; }
+      #section-6 #section-6-content #section-6-f #section-6-fmusic h5 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.375rem;
+        color: #023059; }
+        #section-6 #section-6-content #section-6-f #section-6-fmusic h5 span {
+          text-align: center;
+          color: #03588C;
+          font-family: 'Libre Caslon Text', serif;
+          font-size: 1.125rem;
+          line-height: 1.125rem; }
+          @media (min-width: 768px) {
+            #section-6 #section-6-content #section-6-f #section-6-fmusic h5 span {
+              font-size: 1.375rem;
+              line-height: 1.375rem; } }
+        @media (min-width: 768px) {
+          #section-6 #section-6-content #section-6-f #section-6-fmusic h5 {
+            font-size: 1.25rem;
+            line-height: 1.6875rem; } }
     #section-6 #section-6-content #section-6-f #hr {
       width: 239px;
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid #B46A68;
       border-radius: 25%;
       margin: auto;
       margin-top: -20px; }
@@ -682,7 +812,7 @@ footer {
         #section-6 #section-6-content #section-6-f #hr {
           width: 553px; } }
     #section-6 #section-6-content #section-6-f hr {
-      border: 1px solid black;
+      border: 1px solid #B46A68;
       border-radius: 25%;
       width: 159px;
       margin: auto;
@@ -690,12 +820,37 @@ footer {
       @media (min-width: 768px) {
         #section-6 #section-6-content #section-6-f hr {
           width: 196px; } }
+    #section-6 #section-6-content #section-6-f h1 {
+      font-size: 1.4375rem;
+      margin-bottom: 20px;
+      color: #03588C; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-f h1 {
+          font-size: 2rem; } }
     #section-6 #section-6-content #section-6-f h3 {
-      text-align: center; }
-    #section-6 #section-6-content #section-6-f h5 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      color: #023059; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-f h3 {
+          font-size: 1.5rem;
+          line-height: 2rem; } }
     #section-6 #section-6-content #section-6-f p {
-      text-align: left; }
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5rem;
+      color: #023059;
+      padding-left: 50px; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-f p {
+          font-size: 1rem; } }
+      @media (min-width: 992px) {
+        #section-6 #section-6-content #section-6-f p {
+          line-height: 1.875rem; } }
     #section-6 #section-6-content #section-6-f aside {
       display: grid;
       grid-template-columns: 50% auto;
@@ -746,11 +901,41 @@ footer {
         grid-template-areas: "sdrink smusic"; } }
     #section-6 #section-6-content #section-6-s #section-6-sdrink {
       grid-area: sdrink; }
+      #section-6 #section-6-content #section-6-s #section-6-sdrink h5 {
+        text-align: center;
+        font-size: 1.0625rem;
+        font-weight: 400;
+        line-height: 1.0625rem;
+        color: #023059; }
+        @media (min-width: 768px) {
+          #section-6 #section-6-content #section-6-s #section-6-sdrink h5 {
+            font-size: 1.375rem;
+            line-height: 2rem; } }
     #section-6 #section-6-content #section-6-s #section-6-smusic {
       grid-area: smusic; }
+      #section-6 #section-6-content #section-6-s #section-6-smusic h5 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.375rem;
+        color: #023059; }
+        #section-6 #section-6-content #section-6-s #section-6-smusic h5 span {
+          text-align: center;
+          color: #03588C;
+          font-family: 'Libre Caslon Text', serif;
+          font-size: 1.125rem;
+          line-height: 1.125rem; }
+          @media (min-width: 768px) {
+            #section-6 #section-6-content #section-6-s #section-6-smusic h5 span {
+              font-size: 1.375rem;
+              line-height: 1.375rem; } }
+        @media (min-width: 768px) {
+          #section-6 #section-6-content #section-6-s #section-6-smusic h5 {
+            font-size: 1.25rem;
+            line-height: 1.6875rem; } }
     #section-6 #section-6-content #section-6-s #hr2 {
       width: 239px;
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid #B46A68;
       border-radius: 25%;
       margin: auto;
       margin-top: -20px; }
@@ -758,7 +943,7 @@ footer {
         #section-6 #section-6-content #section-6-s #hr2 {
           width: 553px; } }
     #section-6 #section-6-content #section-6-s hr {
-      border: 1px solid black;
+      border: 1px solid #B46A68;
       border-radius: 25%;
       width: 159px;
       margin: auto;
@@ -766,12 +951,37 @@ footer {
       @media (min-width: 768px) {
         #section-6 #section-6-content #section-6-s hr {
           width: 196px; } }
+    #section-6 #section-6-content #section-6-s h1 {
+      font-size: 1.4375rem;
+      margin-bottom: 20px;
+      color: #03588C; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-s h1 {
+          font-size: 2rem; } }
     #section-6 #section-6-content #section-6-s h3 {
-      text-align: center; }
-    #section-6 #section-6-content #section-6-s h5 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      color: #023059; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-s h3 {
+          font-size: 1.5rem;
+          line-height: 2rem; } }
     #section-6 #section-6-content #section-6-s p {
-      text-align: left; }
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5rem;
+      color: #023059;
+      padding-left: 50px; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-s p {
+          font-size: 1rem; } }
+      @media (min-width: 992px) {
+        #section-6 #section-6-content #section-6-s p {
+          line-height: 1.875rem; } }
     #section-6 #section-6-content #section-6-s aside {
       display: grid;
       grid-template-columns: 50% auto;
@@ -823,11 +1033,41 @@ footer {
         grid-template-areas: "sudrink sumusic"; } }
     #section-6 #section-6-content #section-6-su #section-6-sudrink {
       grid-area: sudrink; }
+      #section-6 #section-6-content #section-6-su #section-6-sudrink h5 {
+        text-align: center;
+        font-size: 1.0625rem;
+        font-weight: 400;
+        line-height: 1.0625rem;
+        color: #023059; }
+        @media (min-width: 768px) {
+          #section-6 #section-6-content #section-6-su #section-6-sudrink h5 {
+            font-size: 1.375rem;
+            line-height: 2rem; } }
     #section-6 #section-6-content #section-6-su #section-6-sumusic {
       grid-area: sumusic; }
+      #section-6 #section-6-content #section-6-su #section-6-sumusic h5 {
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.375rem;
+        color: #023059; }
+        #section-6 #section-6-content #section-6-su #section-6-sumusic h5 span {
+          text-align: center;
+          color: #03588C;
+          font-family: 'Libre Caslon Text', serif;
+          font-size: 1.125rem;
+          line-height: 1.125rem; }
+          @media (min-width: 768px) {
+            #section-6 #section-6-content #section-6-su #section-6-sumusic h5 span {
+              font-size: 1.375rem;
+              line-height: 1.375rem; } }
+        @media (min-width: 768px) {
+          #section-6 #section-6-content #section-6-su #section-6-sumusic h5 {
+            font-size: 1.25rem;
+            line-height: 1.6875rem; } }
     #section-6 #section-6-content #section-6-su #hr3 {
       width: 239px;
-      border-bottom: 3px solid black;
+      border-bottom: 3px solid #B46A68;
       border-radius: 25%;
       margin: auto;
       margin-top: -20px; }
@@ -835,7 +1075,7 @@ footer {
         #section-6 #section-6-content #section-6-su #hr3 {
           width: 553px; } }
     #section-6 #section-6-content #section-6-su hr {
-      border: 1px solid black;
+      border: 1px solid #B46A68;
       border-radius: 25%;
       width: 159px;
       margin: auto;
@@ -843,12 +1083,37 @@ footer {
       @media (min-width: 768px) {
         #section-6 #section-6-content #section-6-su hr {
           width: 196px; } }
+    #section-6 #section-6-content #section-6-su h1 {
+      font-size: 1.4375rem;
+      margin-bottom: 20px;
+      color: #03588C; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-su h1 {
+          font-size: 2rem; } }
     #section-6 #section-6-content #section-6-su h3 {
-      text-align: center; }
-    #section-6 #section-6-content #section-6-su h5 {
-      text-align: center; }
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      color: #023059; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-su h3 {
+          font-size: 1.5rem;
+          line-height: 2rem; } }
     #section-6 #section-6-content #section-6-su p {
-      text-align: left; }
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5rem;
+      color: #023059;
+      padding-left: 50px; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-su p {
+          font-size: 1rem; } }
+      @media (min-width: 992px) {
+        #section-6 #section-6-content #section-6-su p {
+          line-height: 1.875rem; } }
     #section-6 #section-6-content #section-6-su aside {
       display: grid;
       grid-template-columns: 50% auto;

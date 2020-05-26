@@ -12,15 +12,36 @@
 
         h1{
             text-align: center;
+            font-size: rem-calc(31);
+            color: $light-blue;
+
+            @include md{
+                font-size: rem-calc(42);
+            }
         }
 
         p{
             text-align: center;
+            font-size: rem-calc(18);
+            line-height: rem-calc(24);
+            color: $dark-blue;
 
             @include md{
                 grid-area: p;
                 text-align: left;
+                margin-top: 0px;
+                font-size: rem-calc(22);
+            line-height: rem-calc(30);
+
+            padding-left: 50px;
+            }
+            @include lg{
+                border-right: solid 1px $pastel-blue;
+                padding-right: 50px;
                 margin-top: 80px;
+                font-size: rem-calc(27);
+
+            line-height: rem-calc(37);
             }
         }
 
@@ -31,6 +52,7 @@
 
             @include md{
                 grid-area: boat;
+                padding-right: 50px;
             }
         }
     }
