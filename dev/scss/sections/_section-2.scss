@@ -112,7 +112,7 @@
             }
 
             a:hover, a:active{
-                color: blue;
+                color: $light-blue;
             }
 
             h2 {
@@ -122,6 +122,7 @@
                 padding: 10px 20px;
                 border-radius: 25px;
                 width: 121px;
+                font-weight: 400;
             }
 
         }

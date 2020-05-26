@@ -37,6 +37,7 @@
             @include lg{
                 font-size: rem-calc(27);
             line-height: rem-calc(37);
+            margin-left: 30px;
             }
         }
 
@@ -52,6 +53,10 @@
                     //  height: 301px;
                     //  width: 461px;
                  }
+            }
+
+            @include lg{
+                margin-right: 30px;
             }
         }
 
@@ -172,6 +177,11 @@
                     grid-template-columns: 50% auto;
                     grid-template-areas: "fdrink fmusic";
                 }
+
+                @include lg{
+                    padding-left: 50px;
+                    padding-right: 50px;
+                }
             }
 
             #section-6-fdrink{
@@ -279,10 +289,13 @@
 
                 @include md{
                     font-size: rem-calc(16);
+                    padding-left: 75px;
+                    margin-bottom: 170px;
                 }
 
                 @include lg{
                     line-height: rem-calc(30);
+                    padding-left: 120px;
                 }
             }
 
@@ -297,6 +310,7 @@
                     grid-template-rows: 50% auto;
                     grid-template-areas: "g1" "g2";
                     align-items: center;
+                    gap: 0px;
                 }
             }
 
@@ -353,6 +367,11 @@
                     display: grid;
                     grid-template-columns: 50% auto;
                     grid-template-areas: "sdrink smusic";
+                }
+
+                @include lg{
+                    padding-left: 50px;
+                    padding-right: 50px;
                 }
             }
 
@@ -461,10 +480,13 @@
 
                 @include md{
                     font-size: rem-calc(16);
+                    padding-left: 75px;
+                    margin-bottom: 130px;
                 }
 
                 @include lg{
                     line-height: rem-calc(30);
+                    padding-left: 120px;
                 }
             }
 
@@ -480,6 +502,7 @@
                     grid-template-rows: 50% auto;
                     grid-template-areas: "g3" "g4";
                     align-items: center;
+                    gap: 0px;
                 }
             }
 
@@ -536,6 +559,11 @@
                     display: grid;
                     grid-template-columns: 50% auto;
                     grid-template-areas: "sudrink sumusic";
+                }
+
+                @include lg{
+                    padding-left: 50px;
+                    padding-right: 50px;
                 }
             }
 
@@ -644,10 +672,13 @@
 
                 @include md{
                     font-size: rem-calc(16);
+                    padding-left: 75px;
+                    margin-bottom: 170px;
                 }
 
                 @include lg{
                     line-height: rem-calc(30);
+                    padding-left: 120px;
                 }
             }
 
@@ -662,6 +693,7 @@
                     grid-template-rows: 50% auto;
                     grid-template-areas: "g5" "g6";
                     align-items: center;
+                    gap: 0px;
                 }
             }
 

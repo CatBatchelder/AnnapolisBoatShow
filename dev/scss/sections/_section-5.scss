@@ -36,9 +36,8 @@
             padding-left: 50px;
             }
             @include lg{
-                border-right: solid 1px $pastel-blue;
                 padding-right: 50px;
-                margin-top: 80px;
+                margin-top: 50px;
                 font-size: rem-calc(27);
 
             line-height: rem-calc(37);
