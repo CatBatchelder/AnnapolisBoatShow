@@ -2,6 +2,7 @@
     Base
 ============= */
 
+
 .show-for-md{
     display: none;
     @include md{
@@ -51,10 +52,10 @@ ul{
   }
 
 .content-spacing{
-    margin-top: 45px;
+    padding-top: 45px;
 
     @include md{
-        margin-top: 75px;
+        padding-top: 75px;
     }
 }
 

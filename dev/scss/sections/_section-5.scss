@@ -2,67 +2,71 @@
     Section-5
 ============= */
 
-#section-5{
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-5 .";
+#section-5 {
 
-    #section-5-content{
-        grid-area: section-5;
-
-        h1{
-            text-align: center;
-            font-size: rem-calc(31);
-            color: $light-blue;
-
-            @include md{
-                font-size: rem-calc(42);
-            }
-        }
-
-        p{
-            text-align: center;
-            font-size: rem-calc(18);
-            line-height: rem-calc(24);
-            color: $dark-blue;
-
-            @include md{
-                grid-area: p;
-                text-align: left;
-                margin-top: 0px;
-                font-size: rem-calc(22);
-            line-height: rem-calc(30);
-
-            padding-left: 50px;
-            }
-            @include lg{
-                padding-right: 50px;
-                margin-top: 50px;
-                font-size: rem-calc(27);
-
-            line-height: rem-calc(37);
-            }
-        }
-
-        aside{
-            img{
-                width: 100%;
-            }
-
-            @include md{
-                grid-area: boat;
-                padding-right: 50px;
-            }
-        }
-    }
-    #section-5-md{
-        @include md{
+    background: rgb(162, 195, 215);
+    background: linear-gradient(180deg, rgba(162, 195, 215, 1) 0%, rgba(151, 189, 212, 1) 100%);
             display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "p boat";
-            gap: 105px;
-            margin-top: 50px;
+            grid-template-columns: 15px auto 15px;
+            grid-template-areas: ". section-5 .";
+
+            #section-5-content {
+            grid-area: section-5;
+
+            h1 {
+                text-align: center;
+                font-size: rem-calc(31);
+                color: $light-blue;
+
+                @include md {
+                    font-size: rem-calc(42);
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: rem-calc(18);
+                line-height: rem-calc(24);
+                color: $dark-blue;
+
+                @include md {
+                    grid-area: p;
+                    text-align: left;
+                    margin-top: 0px;
+                    font-size: rem-calc(22);
+                    line-height: rem-calc(30);
+
+                    padding-left: 50px;
+                }
+
+                @include lg {
+                    padding-right: 50px;
+                    margin-top: 50px;
+                    font-size: rem-calc(27);
+
+                    line-height: rem-calc(37);
+                }
+            }
+
+            aside {
+                img {
+                    width: 100%;
+                }
+
+                @include md {
+                    grid-area: boat;
+                    padding-right: 50px;
+                }
+            }
+        }
+
+        #section-5-md {
+            @include md {
+                display: grid;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "p boat";
+                gap: 105px;
+                margin-top: 50px;
+            }
         }
     }
-}

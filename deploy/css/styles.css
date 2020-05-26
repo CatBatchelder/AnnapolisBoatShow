@@ -356,10 +356,10 @@ ul {
   margin: 8.5px; }
 
 .content-spacing {
-  margin-top: 45px; }
+  padding-top: 45px; }
   @media (min-width: 768px) {
     .content-spacing {
-      margin-top: 75px; } }
+      padding-top: 75px; } }
 /* =============
     Typography
 ============= */
@@ -433,6 +433,8 @@ footer {
     Section-2
 ============= */
 #section-2 {
+  background: #dde4e9;
+  background: linear-gradient(180deg, #dde4e9 0%, #c4d6e2 100%);
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-2 ."; }
@@ -530,6 +532,8 @@ footer {
     Section-3
 ============= */
 #section-3 {
+  background: #c4d6e2;
+  background: linear-gradient(180deg, #c4d6e2 0%, #a8c6d9 100%);
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-3 ."; }
@@ -621,6 +625,8 @@ footer {
     Section-4
 ============= */
 #section-4 {
+  background: #a8c6d9;
+  background: linear-gradient(180deg, #a8c6d9 0%, #a2c3d7 100%);
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 ."; }
@@ -680,6 +686,8 @@ footer {
     Section-5
 ============= */
 #section-5 {
+  background: #a2c3d7;
+  background: linear-gradient(180deg, #a2c3d7 0%, #97bdd4 100%);
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-5 ."; }
@@ -728,6 +736,8 @@ footer {
     Section-6
 ============= */
 #section-6 {
+  background: #97bdd4;
+  background: linear-gradient(180deg, #97bdd4 0%, #66a1c5 100%);
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-6 ."; }

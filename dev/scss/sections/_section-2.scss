@@ -3,6 +3,10 @@
 ============= */
 
 #section-2 {
+
+    background: rgb(221,228,233);
+background: linear-gradient(180deg, rgba(221,228,233,1) 0%, rgba(196,214,226,1) 100%);
+
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-2 .";
