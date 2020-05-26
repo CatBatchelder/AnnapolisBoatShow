@@ -4,14 +4,20 @@
 
 #section-2 {
 
-    background: rgb(221,228,233);
-background: linear-gradient(180deg, rgba(221,228,233,1) 0%, rgba(196,214,226,1) 100%);
+    background: rgb(221, 228, 233);
+    background: linear-gradient(180deg, rgba(221, 228, 233, 1) 0%, rgba(196, 214, 226, 1) 100%);
+
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-2 .";
+    }
 
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-2 .";
-    
-    @include md{
+
+    @include md {
         margin-bottom: -60px;
     }
 
@@ -32,29 +38,29 @@ background: linear-gradient(180deg, rgba(221,228,233,1) 0%, rgba(196,214,226,1) 
             text-align: center;
             margin: 20px;
 
-            h1{
+            h1 {
                 font-size: rem-calc(31);
                 color: $light-blue;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(42);
                 }
             }
 
-            h3{
+            h3 {
                 font-size: rem-calc(18);
                 color: $dark-blue;
                 font-weight: 400;
-                
-                @include md{
+
+                @include md {
                     font-size: rem-calc(22);
-                    
-                    span{ 
+
+                    span {
                         font-weight: 700;
                     }
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(28);
                 }
             }
@@ -69,53 +75,58 @@ background: linear-gradient(180deg, rgba(221,228,233,1) 0%, rgba(196,214,226,1) 
 
         #section-2-price {
             text-align: center;
-            @include md{
+
+            @include md {
                 border-right: 2px $pastel-blue solid;
                 grid-area: price;
                 margin-left: -40px;
             }
 
-            h1{
+            h1 {
                 font-size: rem-calc(31);
                 color: $light-blue;
 
-                @include md{
+                @include md {
                     font-size: rem-calc(42);
                 }
             }
 
-            h3{
+            h3 {
                 font-size: rem-calc(18);
                 color: $dark-blue;
                 font-weight: 400;
-                span{ 
+
+                span {
                     font-weight: 700;
                 }
-                
-                @include md{
+
+                @include md {
                     font-size: rem-calc(22);
                 }
 
-                @include lg{
+                @include lg {
                     font-size: rem-calc(28);
                 }
             }
 
-            
+
         }
 
         #section-2-link {
             display: flex;
             justify-content: center;
             grid-area: tickets;
-            a:link, a:visited{
+
+            a:link,
+            a:visited {
                 color: $white;
                 transition: 0.25s;
                 font-size: rem-calc(21);
                 text-decoration: none;
             }
 
-            a:hover, a:active{
+            a:hover,
+            a:active {
                 color: $light-blue;
             }
 
@@ -137,7 +148,7 @@ background: linear-gradient(180deg, rgba(221,228,233,1) 0%, rgba(196,214,226,1) 
             border-radius: 25%;
             margin: auto;
 
-            @include md{
+            @include md {
                 width: 0;
             }
         }

@@ -2,32 +2,64 @@
     Footer
 ============= */
 
-footer{
+footer {
+
+    background-color: #73A2BF;
+    color: $dark-blue;
+
     text-align: center;
     padding: 10px;
-    h1{
-        font-size: rem-calc(16);
+
+    h1 {
+        font-size: rem-calc(18);
+        line-height: rem-calc(24);
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
     }
 
-    h3{
+    h3 {
         font-size: rem-calc(14);
+        line-height: rem-calc(19);
+        font-weight: 400;
     }
-    ul{
+
+    ul {
         display: flex;
         justify-content: center;
 
-        li{
+        li {
             margin: 0 10px;
 
-            a:link, a:visited{
-                color: $black;
+            a:link,
+            a:visited {
+                color: $light-blue;
                 transition: 0.25s;
                 font-size: rem-calc(30);
             }
 
-            a:hover, a:active{
+            a:hover,
+            a:active {
                 color: $white;
             }
         }
-}
+    }
+
+    @include lg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "left right";
+    }
+
+    #footer-1 {
+        @include lg {
+            grid-area: left;
+        }
+    }
+
+    #footer-2 {
+
+        @include lg {
+            grid-area: right;
+        }
+    }
 }

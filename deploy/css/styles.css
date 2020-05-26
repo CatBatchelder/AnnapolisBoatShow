@@ -390,31 +390,112 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+  text-align: right; }
+  @media (min-width: 992px) {
+    #nav-container ul {
+      display: flex;
+      justify-content: flex-end; } }
+  #nav-container ul li {
+    margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      #nav-container ul li {
+        align-items: center;
+        display: flex;
+        margin: 0px 30px 0 0; } }
+    #nav-container ul li a:link,
+    #nav-container ul li a:visited {
+      color: #023059;
+      text-decoration: none;
+      transition: 0.25s; }
+    #nav-container ul li a:hover,
+    #nav-container ul li a:active {
+      color: #03588C; }
+
 /* =============
     Header
 ============= */
+header {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.4375rem;
+  background-color: #73A2BF;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  header > div {
+    display: grid;
+    grid-template-areas: "logo burger" "navi navi";
+    grid-template-columns: 80% auto; }
+    @media (min-width: 992px) {
+      header > div {
+        grid-template-areas: "logo navi";
+        grid-template-columns: 20% auto; } }
+    header > div #logo-container {
+      grid-area: logo;
+      padding: 20px; }
+    header > div #burger-container {
+      align-items: center;
+      display: flex;
+      grid-area: burger;
+      justify-content: flex-end;
+      padding: 20px; }
+      @media (min-width: 992px) {
+        header > div #burger-container {
+          display: none !important; } }
+      header > div #burger-container i {
+        cursor: pointer; }
+    header > div #nav-container {
+      background-color: #73A2BF;
+      display: none;
+      grid-area: navi;
+      padding: 0 20px 0; }
+      @media (min-width: 992px) {
+        header > div #nav-container {
+          background-color: #73A2BF;
+          display: block !important; } }
 /* =============
     Footer
 ============= */
 footer {
+  background-color: #73A2BF;
+  color: #023059;
   text-align: center;
   padding: 10px; }
   footer h1 {
-    font-size: 1rem; }
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400; }
   footer h3 {
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    font-weight: 400; }
   footer ul {
     display: flex;
     justify-content: center; }
     footer ul li {
       margin: 0 10px; }
-      footer ul li a:link, footer ul li a:visited {
-        color: #000;
+      footer ul li a:link,
+      footer ul li a:visited {
+        color: #03588C;
         transition: 0.25s;
         font-size: 1.875rem; }
-      footer ul li a:hover, footer ul li a:active {
+      footer ul li a:hover,
+      footer ul li a:active {
         color: #fff; }
-
+  @media (min-width: 992px) {
+    footer {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "left right"; } }
+  @media (min-width: 992px) {
+    footer #footer-1 {
+      grid-area: left; } }
+  @media (min-width: 992px) {
+    footer #footer-2 {
+      grid-area: right; } }
 /* =============
     Section-1
 ============= */
@@ -422,7 +503,8 @@ footer {
   background-image: url("../img/section-1/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 176px; }
+  height: 176px;
+  margin-top: 120px; }
   @media (min-width: 768px) {
     #section-1 {
       height: 425px; } }
@@ -438,6 +520,11 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-2 ."; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". section-2 ."; } }
   @media (min-width: 768px) {
     #section-2 {
       margin-bottom: -60px; } }
@@ -505,12 +592,14 @@ footer {
       display: flex;
       justify-content: center;
       grid-area: tickets; }
-      #section-2 #section-2-container #section-2-link a:link, #section-2 #section-2-container #section-2-link a:visited {
+      #section-2 #section-2-container #section-2-link a:link,
+      #section-2 #section-2-container #section-2-link a:visited {
         color: #fff;
         transition: 0.25s;
         font-size: 1.3125rem;
         text-decoration: none; }
-      #section-2 #section-2-container #section-2-link a:hover, #section-2 #section-2-container #section-2-link a:active {
+      #section-2 #section-2-container #section-2-link a:hover,
+      #section-2 #section-2-container #section-2-link a:active {
         color: #03588C; }
       #section-2 #section-2-container #section-2-link h2 {
         text-align: center;
@@ -537,6 +626,9 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-3 ."; }
+  @media (min-width: 1200px) {
+    #section-3 {
+      grid-template-columns: auto 1200px auto; } }
   #section-3 #section-3-content {
     grid-area: section-3; }
     #section-3 #section-3-content h1 {
@@ -630,6 +722,9 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-4 ."; }
+  @media (min-width: 1200px) {
+    #section-4 {
+      grid-template-columns: auto 1200px auto; } }
   #section-4 #section-4-content {
     grid-area: section-4; }
     #section-4 #section-4-content h1 {
@@ -664,12 +759,14 @@ footer {
     #section-4 #section-4-content #section-4-link {
       display: flex;
       justify-content: center; }
-      #section-4 #section-4-content #section-4-link a:link, #section-4 #section-4-content #section-4-link a:visited {
+      #section-4 #section-4-content #section-4-link a:link,
+      #section-4 #section-4-content #section-4-link a:visited {
         color: #fff;
         transition: 0.25s;
         font-size: 1.3125rem;
         text-decoration: none; }
-      #section-4 #section-4-content #section-4-link a:hover, #section-4 #section-4-content #section-4-link a:active {
+      #section-4 #section-4-content #section-4-link a:hover,
+      #section-4 #section-4-content #section-4-link a:active {
         color: #73A2BF; }
       #section-4 #section-4-content #section-4-link h2 {
         text-align: center;
@@ -691,6 +788,9 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-5 ."; }
+  @media (min-width: 1200px) {
+    #section-5 {
+      grid-template-columns: auto 1200px auto; } }
   #section-5 #section-5-content {
     grid-area: section-5; }
     #section-5 #section-5-content h1 {
@@ -741,6 +841,9 @@ footer {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-6 ."; }
+  @media (min-width: 1200px) {
+    #section-6 {
+      grid-template-columns: auto 1200px auto; } }
   #section-6 #section-6-content {
     grid-area: section-6; }
     #section-6 #section-6-content h1 {
