@@ -48,6 +48,16 @@
         #section-4-link{
             display: flex;
             justify-content: center;
+            a:link, a:visited{
+                color: $white;
+                transition: 0.25s;
+                font-size: rem-calc(21);
+                text-decoration: none;
+            }
+
+            a:hover, a:active{
+                color: blue;
+            }
 
             h2{
                 text-align: center;

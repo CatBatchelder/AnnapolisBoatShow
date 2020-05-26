@@ -30,6 +30,7 @@
 
                 @include md{
                     width: 556px;
+                    margin-top: 35px;
                 }
 
                 @include lg{
@@ -48,10 +49,13 @@
 
             @include md {
                 grid-area: p;
+                margin-right: 35px;
+                margin-top: 80px;
             }
 
             @include lg{
                 border-right: solid 1px blue;
+                padding-right: 35px;
             }
         }
 

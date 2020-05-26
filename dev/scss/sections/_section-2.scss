@@ -6,6 +6,10 @@
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-2 .";
+    
+    @include md{
+        margin-bottom: -60px;
+    }
 
     #section-2-container {
         grid-area: section-2;
@@ -35,9 +39,10 @@
         #section-2-price {
             text-align: center;
             @include md{
-                border-left: 1px blue solid;
+                // border-left: 1px blue solid;
                 border-right: 1px blue solid;
                 grid-area: price;
+                margin-left: -40px;
             }
             
         }
@@ -46,20 +51,29 @@
             display: flex;
             justify-content: center;
             grid-area: tickets;
+            a:link, a:visited{
+                color: $white;
+                transition: 0.25s;
+                font-size: rem-calc(21);
+                text-decoration: none;
+            }
+
+            a:hover, a:active{
+                color: blue;
+            }
 
             h2 {
                 text-align: center;
                 background-color: red;
                 color: white;
-                padding: 7px 14px;
-                text-decoration: none;
+                padding: 10px 20px;
                 border-radius: 25px;
                 width: 121px;
             }
 
         }
 
-        #hr {
+        #hr2 {
             width: 140px;
             border-bottom: 2px solid black;
             border-radius: 25%;
@@ -70,13 +84,13 @@
             }
         }
 
-        aside {
-            background-image: url('../img/section-2/boat.png');
-            background-position: center;
-            background-size: cover;
-            height: 116px;
-            width: 75px;
-        }
+        // aside {
+        //     background-image: url('../img/section-2/boat.png');
+        //     background-position: center;
+        //     background-size: cover;
+        //     height: 116px;
+        //     width: 75px;
+        // }
 
     }
 }
