@@ -7,6 +7,57 @@
     background: rgb(196, 214, 226);
     background: linear-gradient(180deg, rgba(196, 214, 226, 1) 0%, rgba(168, 198, 217, 1) 100%);
 
+    #section-3-circles {
+        position: relative;
+
+        #section-3-lg-circle {
+            position: absolute;
+            top: 51px;
+            left: 162px;
+            width: 210px;
+            height: 210px;
+
+            @include md{
+                top: -20px;
+                left: 600px;
+                width: 165px;
+            height: 165px;
+            }
+
+            @include lg{
+                top: 218px;
+                left: -22px;
+            }
+        }
+
+        #section-3-lg-circle-2 {
+
+            @include lg{
+                position: absolute;
+                top: 8px;
+                left: 159px;
+                height: 426px;
+                width: 426px;
+            }
+        }
+
+        #section-3-sm-circle {
+            position: absolute;
+            top: 251px;
+            left: 235px;
+
+            @include md{
+                top: 201px;
+                left: 650px;
+            }
+
+            @include lg{
+                top: 393px;
+                left: -22px;
+            }
+        }
+    }
+
     @include xl {
         grid-template-columns: auto 1200px auto;
     }

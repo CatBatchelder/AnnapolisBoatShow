@@ -7,6 +7,163 @@
     background: rgb(151, 189, 212);
     background: linear-gradient(180deg, rgba(151, 189, 212, 1) 0%, rgba(102, 161, 197, 1) 100%);
 
+    #section-6-circles {
+        position: relative;
+
+        #section-6-lg-circle-1 {
+            position: absolute;
+            top: 197px;
+            left: -92px;
+
+            @include md {
+                top: 63px;
+                left: -77px;
+            }
+
+            @include lg {
+                top: 494px;
+                left: 750px;
+            }
+        }
+
+        #section-6-lg-circle-2 {
+            position: absolute;
+            top: 746px;
+            left: 177px;
+            width: 195px;
+            height: 195px;
+
+            @include md {
+                top: 474px;
+                left: 450px;
+                width: 315px;
+                height: 315px;
+            }
+
+            @include lg {
+                top: 408px;
+                left: 527px;
+                height: 425px;
+                width: 426px;
+            }
+        }
+
+        #section-6-lg-circle-3 {
+            position: absolute;
+            top: 1481px;
+            left: -77px;
+
+            @include md {
+                top: 796px;
+                left: 510px;
+            }
+
+            @include lg {
+                top: 1105px;
+                left: -55px;
+            }
+        }
+
+        #section-6-lg-circle-4 {
+            position: absolute;
+            top: 2282px;
+            left: 137px;
+            width: 230px;
+            height: 230px;
+
+            @include md {
+                top: 1697px;
+                left: -77px;
+            }
+
+            @include lg {
+                top: 1305px;
+                left: -5px;
+                height: 426px;
+                width: 426px;
+            }
+        }
+
+        #section-6-lg-circle-5 {
+
+            @include lg {
+                position: absolute;
+                top: 1911px;
+                left: 760px;
+            }
+        }
+
+        #section-6-lg-circle-6 {
+
+            @include lg {
+                position: absolute;
+                top: 2113px;
+                left: 590px;
+                height: 426px;
+                width: 426px;
+            }
+        }
+
+        #section-6-sm-circle-1 {
+            position: absolute;
+            top: 416px;
+            left: -31px;
+
+            @include md {
+                top: 363px;
+                left: -23px;
+            }
+
+            @include lg {
+                top: 692px;
+                left: 910px;
+            }
+        }
+
+        #section-6-sm-circle-2 {
+            position: absolute;
+            top: 961px;
+            left: 259px;
+
+            @include md {
+                top: 963px;
+                left: 650px;
+            }
+
+            @include lg {
+                top: 1305px;
+                left: -14px;
+            }
+        }
+
+        #section-6-sm-circle-3 {
+            position: absolute;
+            top: 1699px;
+            left: -47px;
+
+            @include md {
+                top: 1657px;
+                left: -54px;
+            }
+
+            @include lg {
+                top: 2111px;
+                left: 910px;
+            }
+        }
+
+        #section-6-sm-circle-4 {
+            position: absolute;
+            top: 2482px;
+            left: 259px;
+
+            @include md {
+                height: 0px;
+                width: 0px;
+            }
+        }
+    }
+
     @include xl {
         grid-template-columns: auto 1200px auto;
     }
@@ -57,11 +214,6 @@
 
             @include md {
                 grid-area: wine;
-
-                img {
-                    //  height: 301px;
-                    //  width: 461px;
-                }
             }
 
             @include lg {
@@ -77,107 +229,6 @@
                     "p wine";
             }
         }
-
-        // ul {
-        //     li {
-        // #hr {
-        //     width: 239px;
-        //     border-bottom: 3px solid black;
-        //     border-radius: 25%;
-        //     margin: auto;
-        //     margin-top: -20px;
-
-        //     @include md {
-        //         width: 553px;
-        //     }
-        // }
-
-        // hr {
-        //     border: 1px solid black;
-        //     border-radius: 25%;
-        //     width: 159px;
-        //     margin: auto;
-        //     margin-top: -20px;
-
-        //     @include md {
-        //         width: 196px;
-        //     }
-        // }
-
-        // h3 {
-        //     text-align: center;
-        // }
-
-        // h5 {
-        //     text-align: center;
-        // }
-
-        // p {
-        //     text-align: left;
-        // }
-
-        // aside {
-        //     display: grid;
-        //     grid-template-columns: 50% auto;
-        //     grid-template-areas: "g1 g2";
-        //     gap: 30px;
-
-        //     // @include md{
-        //     //     grid-template-columns: 1;
-        //     //     grid-template-rows: 50% auto;
-        //     //     grid-template-areas: "g1" "g2";
-        //     //     align-items: center;
-        //     // }
-        // }
-
-        // .g1 {
-        //     img {
-        //         height: 134px;
-        //         width: 134px;
-        //         display: block;
-        //         margin-left: auto;
-        //         margin-right: auto;
-
-        //         @include md {
-        //             height: 174px;
-        //             width: 174px;
-        //         }
-
-        //         @include lg {
-        //             height: 212px;
-        //             width: 212px;
-        //         }
-        //     }
-
-        //     grid-area: g1;
-
-        // }
-
-        // .g2 {
-        //     grid-area: g2;
-
-        //     img {
-        //         height: 134px;
-        //         width: 134px;
-        //         display: block;
-        //         margin-left: auto;
-        //         margin-right: auto;
-
-        //         @include md {
-        //             height: 174px;
-        //             width: 174px;
-        //         }
-
-        //         @include lg {
-        //             height: 212px;
-        //             width: 212px;
-        //         }
-        //     }
-        // }
-
-
-        //     }
-        // }
 
         #section-6-f {
             #section-6-fbig {
