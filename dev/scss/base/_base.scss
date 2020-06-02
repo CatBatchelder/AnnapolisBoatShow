@@ -67,6 +67,8 @@ ul {
     height: 254px;
     width: 254px;
     opacity: 35%;
+    // position: absolute;
+    // z-index: 0;
 }
 
 .sm-circle {
@@ -75,4 +77,6 @@ ul {
     height: 109px;
     width: 109px;
     opacity: 35%;
+    // z-index: -1;
 }
+
