@@ -6,12 +6,22 @@
 
     background: rgb(196, 214, 226);
     background: linear-gradient(180deg, rgba(196, 214, 226, 1) 0%, rgba(168, 198, 217, 1) 100%);
+    overflow: hidden;
 
-    #section-3-circles {
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-3 .";
+
+    #section-3-content {
+        grid-area: section-3;
         position: relative;
+        z-index: 500;
 
         #section-3-lg-circle {
-            position: absolute;
             top: 51px;
             left: 162px;
             width: 210px;
@@ -31,8 +41,9 @@
         }
 
         #section-3-lg-circle-2 {
-
+            display: none;
             @include lg{
+                display: inline;
                 position: absolute;
                 top: 8px;
                 left: 159px;
@@ -56,18 +67,6 @@
                 left: -22px;
             }
         }
-    }
-
-    @include xl {
-        grid-template-columns: auto 1200px auto;
-    }
-
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-3 .";
-
-    #section-3-content {
-        grid-area: section-3;
 
         h1 {
             text-align: center;

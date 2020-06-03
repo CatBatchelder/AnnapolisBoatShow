@@ -6,53 +6,9 @@
 
     background: rgb(221, 228, 233);
     background: linear-gradient(180deg, rgba(221, 228, 233, 1) 0%, rgba(196, 214, 226, 1) 100%);
+    overflow: hidden;
 
-    #section-2-circles {
-        position: relative;
-
-        #section-2-lg-circle {
-            position: absolute;
-            top: -90px;
-            left: -94px;
-
-            @include md{
-                top: -200px;
-                left: -41px;
-            }
-
-            @include lg{
-                top: 200px;
-                left: 770px;
-            }
-        }
-
-        #section-2-lg-circle-2 {
-
-            @include lg{
-                position: absolute;
-                top: 8px;
-                left: 580px;
-                height: 426px;
-                width: 426px;
-            }
-        }
-
-        #section-2-sm-circle {
-            position: absolute;
-            top: 110px;
-            left: -5px;
-
-            @include md{
-                top: 6px;
-                left: -10px;
-            }
-
-            @include lg{
-                top: 420px;
-                left: 900px;
-            }
-        }
-    }
+   
 
     @include xl {
         display: grid;
@@ -70,6 +26,53 @@
 
     #section-2-container {
         grid-area: section-2;
+        position: relative;
+        z-index: 500;
+    
+            #section-2-lg-circle {
+                position: absolute;
+                top: -90px;
+                left: -94px;
+    
+                @include md{
+                    top: -200px;
+                    left: -41px;
+                }
+    
+                @include lg{
+                    top: 200px;
+                    left: 770px;
+                }
+            }
+    
+            #section-2-lg-circle-2 {
+                display: none;
+    
+                @include lg{
+                    display: inline;
+                    position: absolute;
+                    top: 8px;
+                    left: 580px;
+                    height: 426px;
+                    width: 426px;
+                }
+            }
+    
+            #section-2-sm-circle {
+                position: absolute;
+                top: 110px;
+                left: -5px;
+    
+                @include md{
+                    top: 6px;
+                    left: -10px;
+                }
+    
+                @include lg{
+                    top: 420px;
+                    left: 900px;
+                }
+            }
 
         @include md {
             display: grid;

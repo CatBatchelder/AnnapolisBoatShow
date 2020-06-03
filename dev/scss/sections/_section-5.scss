@@ -6,12 +6,22 @@
 
     background: rgb(162, 195, 215);
     background: linear-gradient(180deg, rgba(162, 195, 215, 1) 0%, rgba(151, 189, 212, 1) 100%);
+    overflow: hidden;
+    
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+    }
+    
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-5 .";
 
-    #section-5-circles {
+    #section-5-content {
+        grid-area: section-5;
         position: relative;
+        z-index: 500;
 
         #section-5-lg-circle {
-            position: absolute;
             top: 174px;
             left: 160px;
             width: 215px;
@@ -33,10 +43,11 @@
         }
 
         #section-5-lg-circle-2 {
+            display: none;
 
             @include lg{
-                position: absolute;
-                top: 269px;
+                display: inline;
+                top: 100px;
                 left: 87px;
                 height: 426px;
                 width: 426px;
@@ -44,7 +55,6 @@
         }
 
         #section-5-sm-circle {
-            position: absolute;
             top: 385px;
             left: 272px;
             height: 100px;
@@ -64,18 +74,6 @@
                 height: 109px;
             }
         }
-    }
-    
-    @include xl{
-        grid-template-columns: auto 1200px auto;
-    }
-    
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-5 .";
-
-    #section-5-content {
-        grid-area: section-5;
 
         h1 {
             text-align: center;

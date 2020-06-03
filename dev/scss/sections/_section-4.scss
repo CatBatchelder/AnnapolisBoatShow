@@ -6,9 +6,20 @@
 
     background: rgb(168, 198, 217);
     background: linear-gradient(180deg, rgba(168, 198, 217, 1) 0%, rgba(162, 195, 215, 1) 100%);
+    overflow: hidden;
 
-    #section-4-circles {
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    display: grid;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas: ". section-4 .";
+
+    #section-4-content {
+        grid-area: section-4;
         position: relative;
+        z-index: 500;
 
         #section-4-lg-circle {
             position: absolute;
@@ -27,8 +38,10 @@
         }
 
         #section-4-lg-circle-2 {
+            display: none;
 
             @include lg{
+                display: inline;
                 position: absolute;
                 top: 299px;
                 left: 595px;
@@ -52,18 +65,6 @@
                 left: 900px;
             }
         }
-    }
-
-    @include xl {
-        grid-template-columns: auto 1200px auto;
-    }
-
-    display: grid;
-    grid-template-columns: 15px auto 15px;
-    grid-template-areas: ". section-4 .";
-
-    #section-4-content {
-        grid-area: section-4;
 
         h1 {
             text-align: center;
