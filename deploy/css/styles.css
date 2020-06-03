@@ -442,7 +442,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 500; }
+  z-index: 600; }
   header > div {
     display: grid;
     grid-template-areas: "logo burger" "navi navi";
@@ -828,15 +828,16 @@ footer {
     z-index: 500; }
     #section-4 #section-4-content #section-4-lg-circle {
       position: absolute;
-      top: -151px;
-      left: -117px; }
+      top: 0px;
+      left: -117px;
+      overflow: visible; }
       @media (min-width: 768px) {
         #section-4 #section-4-content #section-4-lg-circle {
-          top: -120px;
+          top: -75px;
           left: -10px; } }
       @media (min-width: 992px) {
         #section-4 #section-4-content #section-4-lg-circle {
-          top: 92px;
+          top: 0px;
           left: 760px; } }
     #section-4 #section-4-content #section-4-lg-circle-2 {
       display: none; }
@@ -844,13 +845,13 @@ footer {
         #section-4 #section-4-content #section-4-lg-circle-2 {
           display: inline;
           position: absolute;
-          top: 299px;
+          bottom: 0px;
           left: 595px;
           height: 426px;
           width: 426px; } }
     #section-4 #section-4-content #section-4-sm-circle {
       position: absolute;
-      top: 82px;
+      top: 170px;
       left: -39px; }
       @media (min-width: 768px) {
         #section-4 #section-4-content #section-4-sm-circle {
@@ -936,7 +937,7 @@ footer {
       height: 215px; }
       @media (min-width: 768px) {
         #section-5 #section-5-content #section-5-lg-circle {
-          top: -80px;
+          top: -70px;
           left: 550px;
           width: 200px;
           height: 200px; } }

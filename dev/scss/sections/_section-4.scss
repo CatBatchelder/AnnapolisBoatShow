@@ -23,16 +23,17 @@
 
         #section-4-lg-circle {
             position: absolute;
-            top: -151px;
+            top: 0px;
             left: -117px;
+            overflow: visible;
 
             @include md{
-                top: -120px;
+                top: -75px;
                 left: -10px;
             }
 
             @include lg{
-                top: 92px;
+                top: 0px;
                 left: 760px;
             }
         }
@@ -43,7 +44,7 @@
             @include lg{
                 display: inline;
                 position: absolute;
-                top: 299px;
+                bottom: 0px;
                 left: 595px;
                 height: 426px;
                 width: 426px;
@@ -52,7 +53,7 @@
 
         #section-4-sm-circle {
             position: absolute;
-            top: 82px;
+            top: 170px;
             left: -39px;
 
             @include md{
