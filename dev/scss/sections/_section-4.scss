@@ -27,12 +27,12 @@
             left: -117px;
             overflow: visible;
 
-            @include md{
+            @include md {
                 top: -75px;
                 left: -10px;
             }
 
-            @include lg{
+            @include lg {
                 top: 0px;
                 left: 760px;
             }
@@ -41,7 +41,7 @@
         #section-4-lg-circle-2 {
             display: none;
 
-            @include lg{
+            @include lg {
                 display: inline;
                 position: absolute;
                 bottom: 0px;
@@ -56,12 +56,12 @@
             top: 170px;
             left: -39px;
 
-            @include md{
+            @include md {
                 top: 94px;
                 left: -41px;
             }
 
-            @include lg{
+            @include lg {
                 top: 268px;
                 left: 900px;
             }

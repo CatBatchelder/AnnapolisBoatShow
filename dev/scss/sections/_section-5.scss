@@ -7,11 +7,11 @@
     background: rgb(162, 195, 215);
     background: linear-gradient(180deg, rgba(162, 195, 215, 1) 0%, rgba(151, 189, 212, 1) 100%);
     overflow: hidden;
-    
-    @include xl{
+
+    @include xl {
         grid-template-columns: auto 1200px auto;
     }
-    
+
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-5 .";
@@ -27,14 +27,14 @@
             width: 215px;
             height: 215px;
 
-            @include md{
+            @include md {
                 top: -70px;
                 left: 550px;
                 width: 200px;
                 height: 200px;
             }
 
-            @include lg{
+            @include lg {
                 top: 173px;
                 left: -22px;
                 width: 224px;
@@ -45,7 +45,7 @@
         #section-5-lg-circle-2 {
             display: none;
 
-            @include lg{
+            @include lg {
                 display: inline;
                 top: 100px;
                 left: 87px;
@@ -60,14 +60,14 @@
             height: 100px;
             width: 100px;
 
-            @include md{
+            @include md {
                 top: 115px;
                 left: 704px;
                 height: 55px;
-            width: 55px;
+                width: 55px;
             }
 
-            @include lg{
+            @include lg {
                 top: 353px;
                 left: -39px;
                 width: 109px;

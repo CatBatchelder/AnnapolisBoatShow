@@ -27,14 +27,14 @@
             width: 210px;
             height: 210px;
 
-            @include md{
+            @include md {
                 top: -20px;
                 left: 600px;
                 width: 165px;
-            height: 165px;
+                height: 165px;
             }
 
-            @include lg{
+            @include lg {
                 top: 218px;
                 left: -22px;
             }
@@ -42,7 +42,8 @@
 
         #section-3-lg-circle-2 {
             display: none;
-            @include lg{
+
+            @include lg {
                 display: inline;
                 position: absolute;
                 top: 8px;
@@ -57,12 +58,12 @@
             top: 251px;
             left: 235px;
 
-            @include md{
+            @include md {
                 top: 201px;
                 left: 650px;
             }
 
-            @include lg{
+            @include lg {
                 top: 393px;
                 left: -22px;
             }

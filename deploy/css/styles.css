@@ -384,7 +384,12 @@ ul {
 h1 {
   font-family: 'Libre Caslon Text', serif; }
 
-p, h2, h3, h4, h5, h6 {
+p,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Nunito', sans-serif; }
 
 /* =============
@@ -1254,21 +1259,22 @@ footer {
         #section-6 #section-6-content #section-6-f h3 {
           font-size: 1.5rem;
           line-height: 2rem; } }
-    #section-6 #section-6-content #section-6-f p {
+    #section-6 #section-6-content #section-6-f ul {
       text-align: left;
       font-size: 1rem;
       font-weight: 400;
       font-style: italic;
       line-height: 1.5rem;
       color: #023059;
-      padding-left: 50px; }
+      padding-left: 50px;
+      font-family: 'Nunito', sans-serif; }
       @media (min-width: 768px) {
-        #section-6 #section-6-content #section-6-f p {
+        #section-6 #section-6-content #section-6-f ul {
           font-size: 1rem;
           padding-left: 75px;
           margin-bottom: 170px; } }
       @media (min-width: 992px) {
-        #section-6 #section-6-content #section-6-f p {
+        #section-6 #section-6-content #section-6-f ul {
           line-height: 1.875rem;
           padding-left: 120px; } }
     #section-6 #section-6-content #section-6-f aside {
@@ -1393,21 +1399,22 @@ footer {
         #section-6 #section-6-content #section-6-s h3 {
           font-size: 1.5rem;
           line-height: 2rem; } }
-    #section-6 #section-6-content #section-6-s p {
+    #section-6 #section-6-content #section-6-s ul {
       text-align: left;
       font-size: 1rem;
       font-weight: 400;
       font-style: italic;
       line-height: 1.5rem;
       color: #023059;
-      padding-left: 50px; }
+      padding-left: 50px;
+      font-family: 'Nunito', sans-serif; }
       @media (min-width: 768px) {
-        #section-6 #section-6-content #section-6-s p {
+        #section-6 #section-6-content #section-6-s ul {
           font-size: 1rem;
           padding-left: 75px;
           margin-bottom: 130px; } }
       @media (min-width: 992px) {
-        #section-6 #section-6-content #section-6-s p {
+        #section-6 #section-6-content #section-6-s ul {
           line-height: 1.875rem;
           padding-left: 120px; } }
     #section-6 #section-6-content #section-6-s aside {
@@ -1533,21 +1540,22 @@ footer {
         #section-6 #section-6-content #section-6-su h3 {
           font-size: 1.5rem;
           line-height: 2rem; } }
-    #section-6 #section-6-content #section-6-su p {
+    #section-6 #section-6-content #section-6-su ul {
       text-align: left;
       font-size: 1rem;
       font-weight: 400;
       font-style: italic;
       line-height: 1.5rem;
       color: #023059;
-      padding-left: 50px; }
+      padding-left: 50px;
+      font-family: 'Nunito', sans-serif; }
       @media (min-width: 768px) {
-        #section-6 #section-6-content #section-6-su p {
+        #section-6 #section-6-content #section-6-su ul {
           font-size: 1rem;
           padding-left: 75px;
           margin-bottom: 170px; } }
       @media (min-width: 992px) {
-        #section-6 #section-6-content #section-6-su p {
+        #section-6 #section-6-content #section-6-su ul {
           line-height: 1.875rem;
           padding-left: 120px; } }
     #section-6 #section-6-content #section-6-su aside {
