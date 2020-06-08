@@ -13,6 +13,7 @@ header {
     z-index: 600;
 
     >div {
+       
         display: grid;
         grid-template-areas: "logo burger"
             "navi navi";
@@ -21,11 +22,24 @@ header {
         @include lg {
             grid-template-areas: "logo navi";
             grid-template-columns: 20% auto;
+            height: auto;
         }
 
         #logo-container {
             grid-area: logo;
             padding: 20px;
+            height: 45px;
+
+            @include lg{
+                height: auto;
+            }
+            img{
+                height: 40px;
+
+                @include lg{
+                    height: auto;
+                }
+            }
         }
 
         #burger-container {

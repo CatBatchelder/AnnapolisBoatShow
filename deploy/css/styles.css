@@ -455,10 +455,20 @@ header {
     @media (min-width: 992px) {
       header > div {
         grid-template-areas: "logo navi";
-        grid-template-columns: 20% auto; } }
+        grid-template-columns: 20% auto;
+        height: auto; } }
     header > div #logo-container {
       grid-area: logo;
-      padding: 20px; }
+      padding: 20px;
+      height: 45px; }
+      @media (min-width: 992px) {
+        header > div #logo-container {
+          height: auto; } }
+      header > div #logo-container img {
+        height: 40px; }
+        @media (min-width: 992px) {
+          header > div #logo-container img {
+            height: auto; } }
     header > div #burger-container {
       align-items: center;
       display: flex;
@@ -492,6 +502,17 @@ footer {
     line-height: 1.5rem;
     font-family: 'Nunito', sans-serif;
     font-weight: 400; }
+    footer h1 a:link,
+    footer h1 a:visited {
+      color: #023059;
+      transition: 0.25s;
+      font-size: 1.125rem;
+      font-family: 'Nunito', sans-serif;
+      font-weight: 400;
+      text-decoration: none; }
+    footer h1 a:hover,
+    footer h1 a:active {
+      color: #fff; }
   footer h3 {
     font-size: 0.875rem;
     line-height: 1.1875rem;
@@ -528,13 +549,14 @@ footer {
   background-position: center;
   background-size: cover;
   height: 176px;
-  margin-top: 120px; }
+  margin-top: 75px; }
   @media (min-width: 768px) {
     #section-1 {
       height: 425px; } }
   @media (min-width: 992px) {
     #section-1 {
-      height: 564px; } }
+      height: 800px;
+      margin-top: 120px; } }
 /* =============
     Section-2
 ============= */
@@ -774,7 +796,7 @@ footer {
         #section-3 #section-3-content #section-3-callout {
           grid-area: quote; } }
     #section-3 #section-3-content p {
-      text-align: center;
+      text-align: justify;
       font-size: 1.125rem;
       line-height: 1.5rem;
       color: #023059; }
@@ -788,7 +810,7 @@ footer {
         #section-3 #section-3-content p {
           border-right: solid 1px #73A2BF;
           padding-right: 50px;
-          font-size: 1.5625rem;
+          font-size: 1.625rem;
           line-height: 2.125rem;
           padding-left: 50px; } }
     #section-3 #section-3-content aside {
@@ -808,7 +830,7 @@ footer {
           margin-top: 30px; } }
       @media (min-width: 992px) {
         #section-3 #section-3-content aside {
-          margin-top: 50px; } }
+          margin-top: 20px; } }
     @media (min-width: 768px) {
       #section-3 #section-3-content #section-3-md {
         display: grid;
@@ -891,10 +913,6 @@ footer {
         #section-4 #section-4-content #g1 {
           height: 154px;
           width: 668px; } }
-      @media (min-width: 992px) {
-        #section-4 #section-4-content #g1 {
-          height: 192px;
-          width: 831px; } }
     #section-4 #section-4-content #section-4-link {
       display: flex;
       justify-content: center; }
@@ -986,22 +1004,22 @@ footer {
         #section-5 #section-5-content h1 {
           font-size: 2.625rem; } }
     #section-5 #section-5-content p {
-      text-align: center;
+      text-align: justify;
       font-size: 1.125rem;
       line-height: 1.5rem;
       color: #023059; }
       @media (min-width: 768px) {
         #section-5 #section-5-content p {
           grid-area: p;
-          text-align: left;
+          text-align: justify;
           margin-top: 0px;
-          font-size: 1.375rem;
+          font-size: 1.5rem;
           line-height: 1.875rem;
           padding-left: 50px; } }
       @media (min-width: 992px) {
         #section-5 #section-5-content p {
           padding-right: 50px;
-          margin-top: 50px;
+          margin: 150px 0;
           font-size: 1.6875rem;
           line-height: 2.3125rem; } }
     #section-5 #section-5-content aside img {
@@ -1033,6 +1051,9 @@ footer {
     grid-area: section-6;
     z-index: 500;
     position: relative; }
+    @media (min-width: 992px) {
+      #section-6 #section-6-content .dot {
+        margin-bottom: 5px; } }
     #section-6 #section-6-content #section-6-lg-circle-1 {
       top: 194px;
       left: -96px; }
@@ -1151,21 +1172,21 @@ footer {
         #section-6 #section-6-content h1 {
           font-size: 2.625rem; } }
     #section-6 #section-6-content #section-6-p {
-      text-align: center;
+      text-align: justify;
       font-size: 1.125rem;
       line-height: 1.5rem;
       color: #023059; }
       @media (min-width: 768px) {
         #section-6 #section-6-content #section-6-p {
-          text-align: left;
+          text-align: justify;
           grid-area: p;
           margin-right: 15px;
-          font-size: 1.375rem;
+          font-size: 1.4375rem;
           line-height: 1.875rem; } }
       @media (min-width: 992px) {
         #section-6 #section-6-content #section-6-p {
-          font-size: 1.6875rem;
-          line-height: 2.3125rem;
+          font-size: 2.1875rem;
+          line-height: 2.6875rem;
           margin-left: 30px; } }
     #section-6 #section-6-content aside img {
       margin-top: 20px;
@@ -1176,11 +1197,13 @@ footer {
     @media (min-width: 992px) {
       #section-6 #section-6-content aside {
         margin-right: 30px; } }
-    @media (min-width: 768px) {
-      #section-6 #section-6-content #section-6-beg {
-        display: grid;
-        grid-template-columns: 40% auto;
-        grid-template-areas: "p wine"; } }
+    #section-6 #section-6-content #section-6-beg {
+      margin-top: 15px; }
+      @media (min-width: 768px) {
+        #section-6 #section-6-content #section-6-beg {
+          display: grid;
+          grid-template-columns: 40% auto;
+          grid-template-areas: "p wine"; } }
     @media (min-width: 768px) {
       #section-6 #section-6-content #section-6-f #section-6-fbig {
         display: grid;

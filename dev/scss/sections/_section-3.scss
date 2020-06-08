@@ -126,7 +126,7 @@
 
 
         p {
-            text-align: center;
+            text-align: justify;
             font-size: rem-calc(18);
             line-height: rem-calc(24);
             color: $dark-blue;
@@ -141,7 +141,7 @@
             @include lg {
                 border-right: solid 1px $pastel-blue;
                 padding-right: 50px;
-                font-size: rem-calc(25);
+                font-size: rem-calc(26);
                 line-height: rem-calc(34);
                 padding-left: 50px;
             }
@@ -165,7 +165,7 @@
             }
 
             @include lg {
-                margin-top: 50px;
+                margin-top: 20px;
             }
         }
 

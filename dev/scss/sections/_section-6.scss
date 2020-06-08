@@ -11,6 +11,7 @@
         grid-template-columns: auto 1200px auto;
     }
 
+
     display: grid;
     grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-6 .";
@@ -19,6 +20,12 @@
         grid-area: section-6;
         z-index: 500;
         position: relative;
+
+        @include lg{
+            .dot{
+                margin-bottom: 5px;
+            }
+        }
 
         #section-6-lg-circle-1 {
             top: 194px;
@@ -179,22 +186,22 @@
         }
 
         #section-6-p {
-            text-align: center;
+            text-align: justify;
             font-size: rem-calc(18);
             line-height: rem-calc(24);
             color: $dark-blue;
 
             @include md {
-                text-align: left;
+                text-align: justify;
                 grid-area: p;
                 margin-right: 15px;
-                font-size: rem-calc(22);
+                font-size: rem-calc(23);
                 line-height: rem-calc(30);
             }
 
             @include lg {
-                font-size: rem-calc(27);
-                line-height: rem-calc(37);
+                font-size: rem-calc(35);
+                line-height: rem-calc(43);
                 margin-left: 30px;
             }
         }
@@ -215,6 +222,7 @@
         }
 
         #section-6-beg {
+            margin-top: 15px;
             @include md {
                 display: grid;
                 grid-template-columns: 40% auto;

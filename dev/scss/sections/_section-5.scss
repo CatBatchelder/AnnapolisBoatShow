@@ -86,26 +86,24 @@
         }
 
         p {
-            text-align: center;
+            text-align: justify;
             font-size: rem-calc(18);
             line-height: rem-calc(24);
             color: $dark-blue;
 
             @include md {
                 grid-area: p;
-                text-align: left;
+                text-align: justify;
                 margin-top: 0px;
-                font-size: rem-calc(22);
+                font-size: rem-calc(24);
                 line-height: rem-calc(30);
-
                 padding-left: 50px;
             }
 
             @include lg {
                 padding-right: 50px;
-                margin-top: 50px;
+                margin: 150px 0;
                 font-size: rem-calc(27);
-
                 line-height: rem-calc(37);
             }
         }
