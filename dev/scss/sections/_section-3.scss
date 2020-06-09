@@ -3,9 +3,9 @@
 ============= */
 
 #section-3 {
-
-    background: linear-gradient(180deg, rgba(196, 214, 226, 1) 0%, rgba(168, 198, 217, 1) 100%);
     background: rgb(196, 214, 226);
+    background: linear-gradient(180deg, rgba(196, 214, 226, 1) 0%, rgba(168, 198, 217, 1) 100%);
+   
     overflow: hidden;
 
     @include xl {

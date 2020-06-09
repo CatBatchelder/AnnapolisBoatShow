@@ -3,9 +3,9 @@
 ============= */
 
 #section-4 {
-
-    background: linear-gradient(180deg, rgba(168, 198, 217, 1) 0%, rgba(162, 195, 215, 1) 100%);
     background: rgb(168, 198, 217);
+    background: linear-gradient(180deg, rgba(168, 198, 217, 1) 0%, rgba(162, 195, 215, 1) 100%);
+   
     overflow: hidden;
 
     @include xl {
@@ -26,6 +26,8 @@
             overflow: visible;
             position: absolute;
             top: 0px;
+            height: 200px;
+            width: 200px;
 
             @include md {
                 left: -10px;
@@ -54,7 +56,8 @@
         #section-4-sm-circle {
             left: -39px;
             position: absolute;
-            top: 170px;
+            top: 130px;
+            overflow: visible;
 
             @include md {
                 left: -41px;
@@ -67,11 +70,16 @@
             }
         }
 
+        #dot-container-4{
+            margin-top: -10px;
+            margin-bottom: 15px;
+        }
+
         h1 {
             color: $light-blue;
             font-size: rem-calc(31);
             text-align: center;
-
+          
             @include md {
                 font-size: rem-calc(42);
             }
@@ -94,7 +102,7 @@
             background-image: url("../img/section-4/1.png");
             background-size: cover;
             height: 59px;
-            margin-top: 34px;
+            margin-top: 54px;
             margin: auto;
             width: 256px;
 

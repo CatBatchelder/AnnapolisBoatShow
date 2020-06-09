@@ -235,6 +235,10 @@
         }
 
         #section-6-f {
+            margin-left: -30px;
+            @include md{
+                margin-left: 0px;
+            }
             #section-6-fbig {
                 @include md {
                     display: grid;
@@ -263,11 +267,20 @@
                         line-height: rem-calc(32);
                     }
                 }
+
+                ul{
+                    li{
+                        margin: -10px;
+                    }
+                }
             }
 
             #section-6-fmusic {
                 grid-area: fmusic;
-
+                margin-left: -20px;
+                @include md{
+                    margin-left: 0px;
+                }
                 h5 {
 
                     color: $dark-blue;
@@ -427,7 +440,10 @@
         }
 
         #section-6-s {
-
+            margin-left: -30px;
+            @include md{
+                margin-left: 0px;
+            }
             #section-6-sbig {
                 @include md {
                     display: grid;
@@ -456,11 +472,20 @@
                         line-height: rem-calc(32);
                     }
                 }
+
+                ul{
+                    li{
+                        margin: -10px;
+                    }
+                }
             }
 
             #section-6-smusic {
                 grid-area: smusic;
-
+                margin-left: -20px;
+                @include md{
+                    margin-left: 0px;
+                }
                 h5 {
                     color: $dark-blue;
                     font-size: rem-calc(16);
@@ -620,7 +645,11 @@
         }
 
         #section-6-su {
+            margin-left: -30px;
 
+            @include md{
+                margin-left: 0px;
+            }
             #section-6-subig {
                 @include md {
                     display: grid;
@@ -636,7 +665,7 @@
 
             #section-6-sudrink {
                 grid-area: sudrink;
-
+                
                 h5 {
                     color: $dark-blue;
                     font-size: rem-calc(17);
@@ -649,11 +678,20 @@
                         line-height: rem-calc(32);
                     }
                 }
+
+                ul{
+                    li{
+                        margin: -10px;
+                    }
+                }
             }
 
             #section-6-sumusic {
                 grid-area: sumusic;
-
+                margin-left: -20px;
+                @include md{
+                    margin-left: 0px;
+                }
                 h5 {
                     color: $dark-blue;
                     font-size: rem-calc(16);
