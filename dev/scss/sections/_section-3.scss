@@ -4,8 +4,8 @@
 
 #section-3 {
 
-    background: rgb(196, 214, 226);
     background: linear-gradient(180deg, rgba(196, 214, 226, 1) 0%, rgba(168, 198, 217, 1) 100%);
+    background: rgb(196, 214, 226);
     overflow: hidden;
 
     @include xl {
@@ -13,8 +13,8 @@
     }
 
     display: grid;
-    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-3 .";
+    grid-template-columns: 15px auto 15px;
 
     #section-3-content {
         grid-area: section-3;
@@ -22,21 +22,21 @@
         z-index: 500;
 
         #section-3-lg-circle {
-            top: 51px;
-            left: 162px;
-            width: 210px;
             height: 210px;
+            left: 162px;
+            top: 51px;
+            width: 210px;
 
             @include md {
-                top: -20px;
-                left: 600px;
-                width: 165px;
                 height: 165px;
+                left: 600px;
+                top: -20px;
+                width: 165px;
             }
 
             @include lg {
-                top: 218px;
                 left: -22px;
+                top: 218px;
             }
         }
 
@@ -45,34 +45,34 @@
 
             @include lg {
                 display: inline;
+                height: 426px;
+                left: 159px;
                 position: absolute;
                 top: 8px;
-                left: 159px;
-                height: 426px;
                 width: 426px;
             }
         }
 
         #section-3-sm-circle {
+            left: 235px;
             position: absolute;
             top: 251px;
-            left: 235px;
 
             @include md {
-                top: 201px;
                 left: 650px;
+                top: 201px;
             }
 
             @include lg {
-                top: 393px;
                 left: -22px;
+                top: 393px;
             }
         }
 
         h1 {
-            text-align: center;
-            font-size: rem-calc(31);
             color: $light-blue;
+            font-size: rem-calc(31);
+            text-align: center;
 
             @include md {
                 font-size: rem-calc(42);
@@ -83,12 +83,12 @@
             margin-top: 30px;
 
             h2 {
-                text-align: center;
-                font-family: 'Libre Caslon Text', serif;
-                font-weight: 400;
-                font-size: rem-calc(20);
-                line-height: rem-calc(30);
                 color: $dark-blue;
+                font-family: 'Libre Caslon Text', serif;
+                font-size: rem-calc(20);
+                font-weight: 400;
+                line-height: rem-calc(30);
+                text-align: center;
 
                 @include md {
                     font-size: rem-calc(36);
@@ -102,16 +102,16 @@
             }
 
             div {
-                width: 180px;
                 border-bottom: 2px solid $red;
                 border-radius: 25%;
-                text-align: center;
                 margin: auto;
+                text-align: center;
+                width: 180px;
 
                 @include md {
-                    width: 556px;
-                    margin-top: 35px;
                     border-bottom: 3px solid $red;
+                    margin-top: 35px;
+                    width: 556px;
                 }
 
                 @include lg {
@@ -126,24 +126,25 @@
 
 
         p {
-            text-align: justify;
+
+            color: $dark-blue;
             font-size: rem-calc(18);
             line-height: rem-calc(24);
-            color: $dark-blue;
+            text-align: justify;
 
             @include md {
-                grid-area: p;
-                margin-right: 35px;
                 font-size: rem-calc(22);
+                grid-area: p;
                 line-height: rem-calc(30);
+                margin-right: 35px;
             }
 
             @include lg {
                 border-right: solid 1px $pastel-blue;
-                padding-right: 50px;
                 font-size: rem-calc(26);
                 line-height: rem-calc(34);
                 padding-left: 50px;
+                padding-right: 50px;
             }
         }
 
@@ -151,17 +152,17 @@
             background-image: url('../img/section-3/sailboat.jpg');
             background-position: center;
             background-size: cover;
-            height: 299px;
-            width: 259px;
             display: block;
+            height: 299px;
             margin-left: auto;
             margin-right: auto;
+            width: 259px;
 
             @include md {
                 grid-area: boat;
                 height: 310px;
-                width: 268px;
                 margin-top: 30px;
+                width: 268px;
             }
 
             @include lg {

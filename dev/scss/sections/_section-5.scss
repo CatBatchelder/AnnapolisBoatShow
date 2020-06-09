@@ -4,8 +4,8 @@
 
 #section-5 {
 
-    background: rgb(162, 195, 215);
     background: linear-gradient(180deg, rgba(162, 195, 215, 1) 0%, rgba(151, 189, 212, 1) 100%);
+    background: rgb(162, 195, 215);
     overflow: hidden;
 
     @include xl {
@@ -13,8 +13,8 @@
     }
 
     display: grid;
-    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-5 .";
+    grid-template-columns: 15px auto 15px;
 
     #section-5-content {
         grid-area: section-5;
@@ -22,23 +22,23 @@
         z-index: 500;
 
         #section-5-lg-circle {
-            top: 174px;
-            left: 160px;
-            width: 215px;
             height: 215px;
+            left: 160px;
+            top: 174px;
+            width: 215px;
 
             @include md {
-                top: -70px;
-                left: 550px;
-                width: 200px;
                 height: 200px;
+                left: 550px;
+                top: -70px;
+                width: 200px;
             }
 
             @include lg {
-                top: 173px;
-                left: -22px;
-                width: 224px;
                 height: 224px;
+                left: -22px;
+                top: 173px;
+                width: 224px;
             }
         }
 
@@ -47,38 +47,38 @@
 
             @include lg {
                 display: inline;
-                top: 100px;
-                left: 87px;
                 height: 426px;
+                left: 87px;
+                top: 100px;
                 width: 426px;
             }
         }
 
         #section-5-sm-circle {
-            top: 385px;
-            left: 272px;
             height: 100px;
+            left: 272px;
+            top: 385px;
             width: 100px;
 
             @include md {
-                top: 115px;
-                left: 704px;
                 height: 55px;
+                left: 704px;
+                top: 115px;
                 width: 55px;
             }
 
             @include lg {
-                top: 353px;
-                left: -39px;
-                width: 109px;
                 height: 109px;
+                left: -39px;
+                top: 353px;
+                width: 109px;
             }
         }
 
         h1 {
-            text-align: center;
-            font-size: rem-calc(31);
             color: $light-blue;
+            font-size: rem-calc(31);
+            text-align: center;
 
             @include md {
                 font-size: rem-calc(42);
@@ -86,25 +86,25 @@
         }
 
         p {
-            text-align: justify;
+            color: $dark-blue;
             font-size: rem-calc(18);
             line-height: rem-calc(24);
-            color: $dark-blue;
+            text-align: justify;
 
             @include md {
-                grid-area: p;
-                text-align: justify;
-                margin-top: 0px;
                 font-size: rem-calc(24);
+                grid-area: p;
                 line-height: rem-calc(30);
+                margin-top: 0px;
                 padding-left: 50px;
+                text-align: justify;
             }
 
             @include lg {
-                padding-right: 50px;
-                margin: 150px 0;
                 font-size: rem-calc(27);
                 line-height: rem-calc(37);
+                margin: 150px 0;
+                padding-right: 50px;
             }
         }
 
@@ -123,9 +123,9 @@
     #section-5-md {
         @include md {
             display: grid;
-            grid-template-columns: 50% auto;
-            grid-template-areas: "p boat";
             gap: 105px;
+            grid-template-areas: "p boat";
+            grid-template-columns: 50% auto;
             margin-top: 50px;
         }
     }

@@ -3,9 +3,9 @@
 ============= */
 
 header {
+    background-color: $pastel-blue;
     font-family: 'Nunito', sans-serif;
     font-size: rem-calc(23);
-    background-color: $pastel-blue;
     left: 0;
     position: fixed;
     top: 0;
@@ -13,7 +13,7 @@ header {
     z-index: 600;
 
     >div {
-       
+
         display: grid;
         grid-template-areas: "logo burger"
             "navi navi";
@@ -27,16 +27,17 @@ header {
 
         #logo-container {
             grid-area: logo;
-            padding: 20px;
             height: 45px;
+            padding: 20px;
 
-            @include lg{
+            @include lg {
                 height: auto;
             }
-            img{
+
+            img {
                 height: 40px;
 
-                @include lg{
+                @include lg {
                     height: auto;
                 }
             }

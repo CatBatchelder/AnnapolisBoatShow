@@ -4,21 +4,21 @@
 
 #section-2 {
 
-    background: rgb(221, 228, 233);
     background: linear-gradient(180deg, rgba(221, 228, 233, 1) 0%, rgba(196, 214, 226, 1) 100%);
+    background: rgb(221, 228, 233);
     overflow: hidden;
 
 
 
     @include xl {
         display: grid;
-        grid-template-columns: auto 1200px auto;
         grid-template-areas: ". section-2 .";
+        grid-template-columns: auto 1200px auto;
     }
 
     display: grid;
-    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-2 .";
+    grid-template-columns: 15px auto 15px;
 
     @include md {
         margin-bottom: -60px;
@@ -30,18 +30,18 @@
         z-index: 500;
 
         #section-2-lg-circle {
+            left: -94px;
             position: absolute;
             top: -90px;
-            left: -94px;
 
             @include md {
-                top: -200px;
                 left: -41px;
+                top: -200px;
             }
 
             @include lg {
-                top: 200px;
                 left: 770px;
+                top: 200px;
             }
         }
 
@@ -50,27 +50,27 @@
 
             @include lg {
                 display: inline;
+                height: 426px;
+                left: 580px;
                 position: absolute;
                 top: 8px;
-                left: 580px;
-                height: 426px;
                 width: 426px;
             }
         }
 
         #section-2-sm-circle {
+            left: -5px;
             position: absolute;
             top: 110px;
-            left: -5px;
 
             @include md {
-                top: 6px;
                 left: -10px;
+                top: 6px;
             }
 
             @include lg {
-                top: 420px;
                 left: 900px;
+                top: 420px;
             }
         }
 
@@ -85,13 +85,13 @@
 
 
         #section-2-when {
-            text-align: center;
             margin: 20px;
+            text-align: center;
 
 
             h1 {
-                font-size: rem-calc(31);
                 color: $light-blue;
+                font-size: rem-calc(31);
 
                 @include md {
                     font-size: rem-calc(42);
@@ -99,8 +99,9 @@
             }
 
             h3 {
-                font-size: rem-calc(18);
+
                 color: $dark-blue;
+                font-size: rem-calc(18);
                 font-weight: 400;
 
                 @include md {
@@ -117,10 +118,10 @@
             }
 
             @include md {
-                grid-area: when;
-                margin: 0;
                 border-left: 2px $pastel-blue solid;
                 border-right: 2px $pastel-blue solid;
+                grid-area: when;
+                margin: 0;
             }
         }
 
@@ -143,8 +144,9 @@
             }
 
             h3 {
-                font-size: rem-calc(18);
+
                 color: $dark-blue;
+                font-size: rem-calc(18);
                 font-weight: 400;
 
                 span {
@@ -165,15 +167,15 @@
 
         #section-2-link {
             display: flex;
-            justify-content: center;
             grid-area: tickets;
+            justify-content: center;
 
             a:link,
             a:visited {
                 color: $white;
-                transition: 0.25s;
                 font-size: rem-calc(21);
                 text-decoration: none;
+                transition: 0.25s;
             }
 
             a:hover,
@@ -182,22 +184,22 @@
             }
 
             h2 {
-                text-align: center;
                 background-color: $red;
-                color: white;
-                padding: 10px 20px;
                 border-radius: 25px;
-                width: 121px;
+                color: white;
                 font-weight: 400;
+                padding: 10px 20px;
+                text-align: center;
+                width: 121px;
             }
 
         }
 
         #hr2 {
-            width: 140px;
             border-bottom: 2px solid $pastel-blue;
             border-radius: 25%;
             margin: auto;
+            width: 140px;
 
             @include md {
                 width: 0;

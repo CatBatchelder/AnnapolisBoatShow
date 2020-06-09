@@ -4,26 +4,26 @@
 
 footer {
 
+
     background-color: #73A2BF;
     color: $dark-blue;
-
-    text-align: center;
     padding: 10px;
+    text-align: center;
 
     h1 {
-        font-size: rem-calc(18);
-        line-height: rem-calc(24);
         font-family: 'Nunito', sans-serif;
+        font-size: rem-calc(18);
         font-weight: 400;
+        line-height: rem-calc(24);
 
         a:link,
         a:visited {
             color: $dark-blue;
-            transition: 0.25s;
-            font-size: rem-calc(18);
             font-family: 'Nunito', sans-serif;
+            font-size: rem-calc(18);
             font-weight: 400;
             text-decoration: none;
+            transition: 0.25s;
         }
 
         a:hover,
@@ -34,8 +34,8 @@ footer {
 
     h3 {
         font-size: rem-calc(14);
-        line-height: rem-calc(19);
         font-weight: 400;
+        line-height: rem-calc(19);
     }
 
     ul {
@@ -48,8 +48,8 @@ footer {
             a:link,
             a:visited {
                 color: $light-blue;
-                transition: 0.25s;
                 font-size: rem-calc(30);
+                transition: 0.25s;
             }
 
             a:hover,
@@ -61,8 +61,8 @@ footer {
 
     @include lg {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "left right";
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #footer-1 {

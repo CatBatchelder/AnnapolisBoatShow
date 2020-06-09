@@ -13,87 +13,87 @@
 
 
     display: grid;
-    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". section-6 .";
+    grid-template-columns: 15px auto 15px;
 
     #section-6-content {
         grid-area: section-6;
-        z-index: 500;
         position: relative;
+        z-index: 500;
 
-        @include lg{
-            .dot{
+        @include lg {
+            .dot {
                 margin-bottom: 5px;
             }
         }
 
         #section-6-lg-circle-1 {
-            top: 194px;
             left: -96px;
+            top: 194px;
 
 
             @include md {
-                top: 63px;
                 left: -77px;
+                top: 63px;
             }
 
             @include lg {
-                top: 494px;
                 left: 750px;
+                top: 494px;
             }
         }
 
         #section-6-lg-circle-2 {
-            top: 746px;
-            left: 177px;
-            width: 195px;
             height: 195px;
+            left: 177px;
+            top: 746px;
+            width: 195px;
 
             @include md {
-                top: 474px;
-                left: 450px;
-                width: 315px;
                 height: 315px;
+                left: 450px;
+                top: 474px;
+                width: 315px;
             }
 
             @include lg {
-                top: 408px;
-                left: 527px;
                 height: 425px;
+                left: 527px;
+                top: 408px;
                 width: 426px;
             }
         }
 
         #section-6-lg-circle-3 {
-            top: 1481px;
             left: -77px;
+            top: 1481px;
 
             @include md {
-                top: 796px;
                 left: 510px;
+                top: 796px;
             }
 
             @include lg {
-                top: 1105px;
                 left: -55px;
+                top: 1105px;
             }
         }
 
         #section-6-lg-circle-4 {
-            top: 2282px;
-            left: 137px;
-            width: 230px;
             height: 230px;
+            left: 137px;
+            top: 2282px;
+            width: 230px;
 
             @include md {
-                top: 1697px;
                 left: -77px;
+                top: 1697px;
             }
 
             @include lg {
-                top: 1305px;
-                left: -5px;
                 height: 426px;
+                left: -5px;
+                top: 1305px;
                 width: 426px;
             }
         }
@@ -103,8 +103,8 @@
 
             @include lg {
                 display: inline;
-                top: 1911px;
                 left: 760px;
+                top: 1911px;
             }
         }
 
@@ -113,61 +113,62 @@
 
             @include lg {
                 display: inline;
-                top: 2113px;
-                left: 590px;
                 height: 426px;
+                left: 590px;
+                top: 2113px;
                 width: 426px;
             }
         }
 
         #section-6-sm-circle-1 {
-            top: 416px;
             left: -31px;
+            top: 416px;
 
             @include md {
-                top: 363px;
                 left: -23px;
+                top: 363px;
             }
 
             @include lg {
-                top: 692px;
                 left: 910px;
+                top: 692px;
             }
         }
 
         #section-6-sm-circle-2 {
-            top: 961px;
             left: 259px;
+            top: 961px;
 
             @include md {
-                top: 963px;
                 left: 650px;
+                top: 963px;
             }
 
             @include lg {
-                top: 1305px;
                 left: -14px;
+                top: 1305px;
             }
         }
 
         #section-6-sm-circle-3 {
-            top: 1699px;
+
             left: -47px;
+            top: 1699px;
 
             @include md {
-                top: 1657px;
                 left: -54px;
+                top: 1657px;
             }
 
             @include lg {
-                top: 2111px;
                 left: 910px;
+                top: 2111px;
             }
         }
 
         #section-6-sm-circle-4 {
-            top: 2482px;
             left: 259px;
+            top: 2482px;
 
             @include md {
                 height: 0px;
@@ -176,9 +177,9 @@
         }
 
         h1 {
-            text-align: center;
-            font-size: rem-calc(31);
             color: $light-blue;
+            font-size: rem-calc(31);
+            text-align: center;
 
             @include md {
                 font-size: rem-calc(42);
@@ -186,17 +187,18 @@
         }
 
         #section-6-p {
-            text-align: justify;
+
+            color: $dark-blue;
             font-size: rem-calc(18);
             line-height: rem-calc(24);
-            color: $dark-blue;
+            text-align: justify;
 
             @include md {
-                text-align: justify;
-                grid-area: p;
-                margin-right: 15px;
                 font-size: rem-calc(23);
+                grid-area: p;
                 line-height: rem-calc(30);
+                margin-right: 15px;
+                text-align: justify;
             }
 
             @include lg {
@@ -223,6 +225,7 @@
 
         #section-6-beg {
             margin-top: 15px;
+
             @include md {
                 display: grid;
                 grid-template-columns: 40% auto;
@@ -235,8 +238,8 @@
             #section-6-fbig {
                 @include md {
                     display: grid;
-                    grid-template-columns: 50% auto;
                     grid-template-areas: "fdrink fmusic";
+                    grid-template-columns: 50% auto;
                 }
 
                 @include lg {
@@ -249,11 +252,11 @@
                 grid-area: fdrink;
 
                 h5 {
-                    text-align: center;
+                    color: $dark-blue;
                     font-size: rem-calc(17);
                     font-weight: 400;
                     line-height: rem-calc(17);
-                    color: $dark-blue;
+                    text-align: center;
 
                     @include md {
                         font-size: rem-calc(22);
@@ -266,18 +269,19 @@
                 grid-area: fmusic;
 
                 h5 {
-                    text-align: center;
+
+                    color: $dark-blue;
                     font-size: rem-calc(16);
                     font-weight: 400;
                     line-height: rem-calc(22);
-                    color: $dark-blue;
+                    text-align: center;
 
                     span {
-                        text-align: center;
                         color: $light-blue;
                         font-family: 'Libre Caslon Text', serif;
                         font-size: rem-calc(18);
                         line-height: rem-calc(18);
+                        text-align: center;
 
                         @include md {
                             font-size: rem-calc(22);
@@ -293,11 +297,11 @@
             }
 
             #hr {
-                width: 239px;
                 border-bottom: 3px solid $red;
                 border-radius: 25%;
-                margin: auto;
                 margin-top: -20px;
+                margin: auto;
+                width: 239px;
 
                 @include md {
                     width: 553px;
@@ -305,11 +309,11 @@
             }
 
             hr {
-                border: 1px solid $red;
                 border-radius: 25%;
-                width: 159px;
-                margin: auto;
+                border: 1px solid $red;
                 margin-top: -20px;
+                margin: auto;
+                width: 159px;
 
                 @include md {
                     width: 196px;
@@ -317,9 +321,9 @@
             }
 
             h1 {
+                color: $light-blue;
                 font-size: rem-calc(23);
                 margin-bottom: 20px;
-                color: $light-blue;
 
                 @include md {
                     font-size: rem-calc(32);
@@ -327,11 +331,11 @@
             }
 
             h3 {
-                text-align: center;
+                color: $dark-blue;
                 font-size: rem-calc(18);
                 font-weight: 400;
                 line-height: rem-calc(24);
-                color: $dark-blue;
+                text-align: center;
 
                 @include md {
                     font-size: rem-calc(24);
@@ -340,19 +344,19 @@
             }
 
             ul {
-                text-align: left;
-                font-size: rem-calc(16);
-                font-weight: 400;
-                font-style: italic;
-                line-height: rem-calc(24);
                 color: $dark-blue;
-                padding-left: 50px;
                 font-family: 'Nunito', sans-serif;
+                font-size: rem-calc(16);
+                font-style: italic;
+                font-weight: 400;
+                line-height: rem-calc(24);
+                padding-left: 50px;
+                text-align: left;
 
                 @include md {
                     font-size: rem-calc(16);
-                    padding-left: 75px;
                     margin-bottom: 170px;
+                    padding-left: 75px;
                 }
 
                 @include lg {
@@ -363,26 +367,26 @@
 
             aside {
                 display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "g1 g2";
                 gap: 30px;
+                grid-template-areas: "g1 g2";
+                grid-template-columns: 50% auto;
 
                 @include md {
-                    grid-template-columns: 100%;
-                    grid-template-rows: 50% auto;
-                    grid-template-areas: "g1""g2";
                     align-items: center;
                     gap: 0px;
+                    grid-template-areas: "g1""g2";
+                    grid-template-columns: 100%;
+                    grid-template-rows: 50% auto;
                 }
             }
 
             #g1 {
                 img {
-                    height: 134px;
-                    width: 134px;
                     display: block;
+                    height: 134px;
                     margin-left: auto;
                     margin-right: auto;
+                    width: 134px;
 
                     @include md {
                         height: 174px;
@@ -403,11 +407,11 @@
                 grid-area: g2;
 
                 img {
-                    height: 134px;
-                    width: 134px;
                     display: block;
+                    height: 134px;
                     margin-left: auto;
                     margin-right: auto;
+                    width: 134px;
 
                     @include md {
                         height: 174px;
@@ -427,8 +431,8 @@
             #section-6-sbig {
                 @include md {
                     display: grid;
-                    grid-template-columns: 50% auto;
                     grid-template-areas: "sdrink smusic";
+                    grid-template-columns: 50% auto;
                 }
 
                 @include lg {
@@ -441,11 +445,11 @@
                 grid-area: sdrink;
 
                 h5 {
-                    text-align: center;
+                    color: $dark-blue;
                     font-size: rem-calc(17);
                     font-weight: 400;
                     line-height: rem-calc(17);
-                    color: $dark-blue;
+                    text-align: center;
 
                     @include md {
                         font-size: rem-calc(22);
@@ -458,18 +462,18 @@
                 grid-area: smusic;
 
                 h5 {
-                    text-align: center;
+                    color: $dark-blue;
                     font-size: rem-calc(16);
                     font-weight: 400;
                     line-height: rem-calc(22);
-                    color: $dark-blue;
+                    text-align: center;
 
                     span {
-                        text-align: center;
                         color: $light-blue;
                         font-family: 'Libre Caslon Text', serif;
                         font-size: rem-calc(18);
                         line-height: rem-calc(18);
+                        text-align: center;
 
                         @include md {
                             font-size: rem-calc(22);
@@ -485,11 +489,11 @@
             }
 
             #hr2 {
-                width: 239px;
                 border-bottom: 3px solid $red;
                 border-radius: 25%;
-                margin: auto;
                 margin-top: -20px;
+                margin: auto;
+                width: 239px;
 
                 @include md {
                     width: 553px;
@@ -497,11 +501,11 @@
             }
 
             hr {
-                border: 1px solid $red;
                 border-radius: 25%;
-                width: 159px;
-                margin: auto;
+                border: 1px solid $red;
                 margin-top: -20px;
+                margin: auto;
+                width: 159px;
 
                 @include md {
                     width: 196px;
@@ -509,9 +513,9 @@
             }
 
             h1 {
+                color: $light-blue;
                 font-size: rem-calc(23);
                 margin-bottom: 20px;
-                color: $light-blue;
 
                 @include md {
                     font-size: rem-calc(32);
@@ -519,11 +523,11 @@
             }
 
             h3 {
-                text-align: center;
+                color: $dark-blue;
                 font-size: rem-calc(18);
                 font-weight: 400;
                 line-height: rem-calc(24);
-                color: $dark-blue;
+                text-align: center;
 
                 @include md {
                     font-size: rem-calc(24);
@@ -532,19 +536,19 @@
             }
 
             ul {
-                text-align: left;
-                font-size: rem-calc(16);
-                font-weight: 400;
-                font-style: italic;
-                line-height: rem-calc(24);
                 color: $dark-blue;
-                padding-left: 50px;
                 font-family: 'Nunito', sans-serif;
+                font-size: rem-calc(16);
+                font-style: italic;
+                font-weight: 400;
+                line-height: rem-calc(24);
+                padding-left: 50px;
+                text-align: left;
 
                 @include md {
                     font-size: rem-calc(16);
-                    padding-left: 75px;
                     margin-bottom: 130px;
+                    padding-left: 75px;
                 }
 
                 @include lg {
@@ -555,27 +559,27 @@
 
             aside {
                 display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "g3 g4";
                 gap: 30px;
                 grid-area: smusic;
+                grid-template-areas: "g3 g4";
+                grid-template-columns: 50% auto;
 
                 @include md {
-                    grid-template-columns: 100%;
-                    grid-template-rows: 50% auto;
-                    grid-template-areas: "g3""g4";
                     align-items: center;
                     gap: 0px;
+                    grid-template-areas: "g3""g4";
+                    grid-template-columns: 100%;
+                    grid-template-rows: 50% auto;
                 }
             }
 
             #g3 {
                 img {
-                    height: 134px;
-                    width: 134px;
                     display: block;
+                    height: 134px;
                     margin-left: auto;
                     margin-right: auto;
+                    width: 134px;
 
                     @include md {
                         height: 174px;
@@ -596,11 +600,11 @@
                 grid-area: g4;
 
                 img {
-                    height: 134px;
-                    width: 134px;
                     display: block;
+                    height: 134px;
                     margin-left: auto;
                     margin-right: auto;
+                    width: 134px;
 
                     @include md {
                         height: 174px;
@@ -620,8 +624,8 @@
             #section-6-subig {
                 @include md {
                     display: grid;
-                    grid-template-columns: 50% auto;
                     grid-template-areas: "sudrink sumusic";
+                    grid-template-columns: 50% auto;
                 }
 
                 @include lg {
@@ -634,11 +638,11 @@
                 grid-area: sudrink;
 
                 h5 {
-                    text-align: center;
+                    color: $dark-blue;
                     font-size: rem-calc(17);
                     font-weight: 400;
                     line-height: rem-calc(17);
-                    color: $dark-blue;
+                    text-align: center;
 
                     @include md {
                         font-size: rem-calc(22);
@@ -651,18 +655,18 @@
                 grid-area: sumusic;
 
                 h5 {
-                    text-align: center;
+                    color: $dark-blue;
                     font-size: rem-calc(16);
                     font-weight: 400;
                     line-height: rem-calc(22);
-                    color: $dark-blue;
+                    text-align: center;
 
                     span {
-                        text-align: center;
                         color: $light-blue;
                         font-family: 'Libre Caslon Text', serif;
                         font-size: rem-calc(18);
                         line-height: rem-calc(18);
+                        text-align: center;
 
                         @include md {
                             font-size: rem-calc(22);
@@ -678,11 +682,11 @@
             }
 
             #hr3 {
-                width: 239px;
                 border-bottom: 3px solid $red;
                 border-radius: 25%;
-                margin: auto;
                 margin-top: -20px;
+                margin: auto;
+                width: 239px;
 
                 @include md {
                     width: 553px;
@@ -690,11 +694,11 @@
             }
 
             hr {
-                border: 1px solid $red;
                 border-radius: 25%;
-                width: 159px;
-                margin: auto;
+                border: 1px solid $red;
                 margin-top: -20px;
+                margin: auto;
+                width: 159px;
 
                 @include md {
                     width: 196px;
@@ -702,9 +706,9 @@
             }
 
             h1 {
+                color: $light-blue;
                 font-size: rem-calc(23);
                 margin-bottom: 20px;
-                color: $light-blue;
 
                 @include md {
                     font-size: rem-calc(32);
@@ -712,11 +716,12 @@
             }
 
             h3 {
-                text-align: center;
+
+                color: $dark-blue;
                 font-size: rem-calc(18);
                 font-weight: 400;
                 line-height: rem-calc(24);
-                color: $dark-blue;
+                text-align: center;
 
                 @include md {
                     font-size: rem-calc(24);
@@ -725,19 +730,19 @@
             }
 
             ul {
-                text-align: left;
-                font-size: rem-calc(16);
-                font-weight: 400;
-                font-style: italic;
-                line-height: rem-calc(24);
                 color: $dark-blue;
-                padding-left: 50px;
                 font-family: 'Nunito', sans-serif;
+                font-size: rem-calc(16);
+                font-style: italic;
+                font-weight: 400;
+                line-height: rem-calc(24);
+                padding-left: 50px;
+                text-align: left;
 
                 @include md {
                     font-size: rem-calc(16);
-                    padding-left: 75px;
                     margin-bottom: 170px;
+                    padding-left: 75px;
                 }
 
                 @include lg {
@@ -748,26 +753,26 @@
 
             aside {
                 display: grid;
-                grid-template-columns: 50% auto;
-                grid-template-areas: "g5 g6";
                 gap: 30px;
+                grid-template-areas: "g5 g6";
+                grid-template-columns: 50% auto;
 
                 @include md {
-                    grid-template-columns: 100%;
-                    grid-template-rows: 50% auto;
-                    grid-template-areas: "g5""g6";
                     align-items: center;
                     gap: 0px;
+                    grid-template-areas: "g5""g6";
+                    grid-template-columns: 100%;
+                    grid-template-rows: 50% auto;
                 }
             }
 
             #g5 {
                 img {
-                    height: 134px;
-                    width: 134px;
                     display: block;
+                    height: 134px;
                     margin-left: auto;
                     margin-right: auto;
+                    width: 134px;
 
                     @include md {
                         height: 174px;
@@ -788,11 +793,11 @@
                 grid-area: g6;
 
                 img {
-                    height: 134px;
-                    width: 134px;
                     display: block;
+                    height: 134px;
                     margin-left: auto;
                     margin-right: auto;
+                    width: 134px;
 
                     @include md {
                         height: 174px;
